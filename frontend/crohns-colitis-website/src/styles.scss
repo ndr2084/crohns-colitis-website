@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --brand-color-red: #C72526;
+  --brand-color-blue: #1E155D;
+  --brand-color-yellow: #F7E8D1;
+  --border-radius: 20px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  background: #1C1B22;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+li{
+list-style: none;
+}
