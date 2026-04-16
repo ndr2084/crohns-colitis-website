@@ -18,12 +18,32 @@
 html, body{
   background: #1C1B22;
   font-family: "IBM Plex Sans", sans-serif;
-  height: 100vh;
+  height: 100%;
+  background-image: url('../public/hero-background.png');
+  background-size: cover;      /* fills the element */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+app-main{
+flex: 1;
+}
+
+app-footer{
+  border: 1px solid red;
+  flex-shrink: 0;
 }
 
 li, button, input{
 list-style: none;
 }
+
+/*button logic begins*/
 
 .secondary{
   background: rgb(111, 111, 111);
@@ -44,3 +64,13 @@ width: 150px;
 .small{
 width: 50px;
 }
+
+/*button logic ends*/
+
+/*container logic begins*/
+.container{
+  background: rgba(37, 37, 37, 0.169);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.126);
+}
+/*container logic ends*/

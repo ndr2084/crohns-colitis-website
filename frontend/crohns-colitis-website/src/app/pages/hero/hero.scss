@@ -12,19 +12,24 @@ p{
   color: white;
 }
 
-.hero-container{
+.wrapper{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-container-donate{
+  padding: 32px;
   display: flex;
   flex-direction: column;
   width: 750px;
-  max-width: 100%;
-  padding: 64px;
   justify-content: center;
   gap: 16px;
 }
 
 .hero-text{
   width: 100%;
-
 }
 
 .hero-button{
@@ -37,5 +42,34 @@ p{
 .button-container{
   display: flex;
   gap: 16px;
+}
 
+.hero-container-facts{
+  gap: 16px;
+  margin: 32px;
+  border-radius: 20px;
+  height: 80%;
+  width: 500px;
+  color: white;
+  display: flex;
+  padding: 20px;
+  flex-flow: row wrap;
+}
+
+.quick-links{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 16px;
+
+
+}
+
+
+li{
+  width: 45%;
+  color: black;
+  background: rgba(232, 232, 232, 0.648);
+  height: calc(126px + 32px);
+  border-radius: 20px;
 }
