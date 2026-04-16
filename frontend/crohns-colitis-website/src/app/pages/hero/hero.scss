@@ -1,0 +1,41 @@
+h1{
+  color: white;
+  font-size: 96px;
+  font-weight: 800;
+}
+
+.red{
+  color: var(--brand-color-red);
+}
+
+p{
+  color: white;
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  max-width: 100%;
+  padding: 64px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-text{
+  width: 100%;
+
+}
+
+.hero-button{
+  height: 50px;
+  border-radius: var(--circular-border-radius);
+  color: white;
+  font-size: 16px;
+}
+
+.button-container{
+  display: flex;
+  gap: 16px;
+
+}

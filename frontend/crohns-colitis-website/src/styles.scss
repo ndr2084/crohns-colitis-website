@@ -18,8 +18,29 @@
 html, body{
   background: #1C1B22;
   font-family: "IBM Plex Sans", sans-serif;
+  height: 100vh;
 }
 
-li{
+li, button, input{
 list-style: none;
+}
+
+.secondary{
+  background: rgb(111, 111, 111);
+}
+
+.primary{
+background: var(--brand-color-blue);
+}
+
+.large{
+width: 300px;
+}
+
+.medium{
+width: 150px;
+}
+
+.small{
+width: 50px;
 }
