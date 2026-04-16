@@ -1,13 +1,15 @@
 .search-bar{
-  min-width: 300px;
+  width: 300px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 4px;
-  background: rgba(0, 0, 0, 0.347);
-  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.512);
+
+  border-radius: var(--circular-border-radius);
   border: 1px solid rgba(255, 255, 255, 0.142);
+  transition: background 0.3s ease;
 }
 
 .icon{
@@ -16,25 +18,24 @@
 }
 
 .search-bar:hover{
-  background: rgba(0, 0, 0, 0.574);
+  background: rgba(0, 0, 0, 0.256);
+
 }
 
 input, button{
   all: unset;
+  padding-left: 4px;
 }
 
 button{
+  transition: background 0.3s ease;
   cursor: pointer;
   display: flex;
-}
-
-button:hover{
-  background: rgba(255, 255, 255, 0.256);
-  border-radius: 100px;
+  border-radius: var(--circular-border-radius);
 }
 
 button:active{
   background: rgba(255, 255, 255, 0.128);
-  border-radius: 100px;
+
 }
 
