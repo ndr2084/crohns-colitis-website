@@ -1,0 +1,15 @@
+:host {
+  display: grid;
+  gap: 16px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "search"
+    "main";
+  grid-template-rows: auto auto auto 1fr;
+}
+
+app-header    { grid-area: header; }
+app-nav-bar   { grid-area: nav; }
+app-search-bar { grid-area: search; }
+router-outlet  { grid-area: main; }
