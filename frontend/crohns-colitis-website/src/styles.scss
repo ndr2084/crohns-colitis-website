@@ -17,22 +17,24 @@
 
 html, body{
   background: #1C1B22;
-  font-family: "IBM Plex Sans", sans-serif;
   height: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
   background-image: url('../public/hero-background.png');
-  background-size: cover;      /* fills the element */
-  background-position: center; /* centers the image */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 body{
+  height: 100%;
+
   display: flex;
   flex-direction: column;
 }
 
-app-main{
-flex: 1;
-}
+
 
 app-footer{
   border: 1px solid red;
@@ -72,5 +74,13 @@ width: 50px;
   background: rgba(37, 37, 37, 0.169);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.126);
+  border-radius: 20px;
+}
+
+.mobile-container{
+  background: rgba(37, 37, 37, 0.169);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.126);
+  border-radius: 20px;
 }
 /*container logic ends*/

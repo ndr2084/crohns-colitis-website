@@ -6,11 +6,7 @@ header{
   align-items: center;
 }
 
-nav{
-  display: flex;
-  width: 100%;
-  backdrop-filter: blur(8px);
-}
+
 
 .logo{
   font-size: 20px;
@@ -23,19 +19,6 @@ nav{
 
 }
 
-
-.page-links{
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  background: rgba(17, 17, 17, 0.539);
-  color: rgb(255, 255, 255);
-}
-
 .search-bar{
   display: flex;
   background: rgba(255, 255, 255, 0.202);
@@ -46,16 +29,5 @@ nav{
 }
 
 
-li{
-  display: flex;
-  height: 32px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  transition: background 0.3s ease;
-}
 
-li:hover{
-  background: rgba(255, 255, 255, 0.064);
-}
 

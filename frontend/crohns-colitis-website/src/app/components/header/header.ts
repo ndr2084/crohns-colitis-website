@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { SearchBar } from "../ui-elements/search-bar/search-bar";
 
 @Component({
   selector: 'app-header',
-  imports: [SearchBar],
+  imports: [],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

@@ -3,6 +3,11 @@
   justify-content: center;
   flex-flow: row wrap;
   gap: 16px;
+  width: fit-content;
+}
+
+.quick-links-title{
+  padding-left: 53px;
 }
 
 
@@ -16,16 +21,16 @@
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.128);
   background: var(--brand-color-blue);
-  height: calc(126px + 32px);
+  height: 125px;
   border-radius: 20px;
   transition: 0.3s ease;
   font-weight: 600;
 }
 .quick-links-container{
   gap: 16px;
-  margin: 32px;
+  height: 500px;
   border-radius: 20px;
-  width: 500px;
+  width: 600px;
   color: white;
   display: flex;
   padding: 20px;
@@ -37,9 +42,31 @@
   background: rgba(10, 10, 55, 0.813);
 }
 
+@media screen and (width <= 1250px) {
+  .quick-links-title{
+    width: 100%;
+    text-align: center;
+    height: min-content;
+    padding: 0;
+  }
 
-.quick-links-title{
-  width: 100%;
-  text-align: center;
+  .quick-links-container{
+    all: unset;
+    width: 100%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+  }
+  .quick-links{
+    all: unset;
+    width: 100%;
+    gap: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
 }
-

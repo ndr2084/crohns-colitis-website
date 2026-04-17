@@ -1,0 +1,38 @@
+:host{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: block;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  backdrop-filter: blur(8px);
+}
+
+.page-links{
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(17, 17, 17, 0.539);
+  color: rgb(255, 255, 255);
+}
+
+li{
+  display: flex;
+  height: 32px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+li:hover{
+  background: rgba(255, 255, 255, 0.064);
+}
