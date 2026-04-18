@@ -1,20 +1,14 @@
 @use 'mixins' as *;
 
-.wrapper{
-
-  padding: 8px;
-  display: flex;
-  width: 100%;
-}
 
 .search-bar{
   color: white;
   @include container;
-  width: 100%;
+  width: 500px;
   height: calc(32px + 16px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 4px;
   font-size: 14px;
   border-radius: var(--circular-border-radius);
