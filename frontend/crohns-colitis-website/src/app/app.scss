@@ -2,14 +2,43 @@
   display: grid;
   gap: 16px;
   grid-template-areas:
-    "header"
-    "nav"
-    "search"
-    "main";
-  grid-template-rows: auto auto auto 1fr;
+  "header"
+  "nav"
+  "search"
+  "main";
+  grid-template-rows: auto;
+}
+
+main{
+  overflow-y: auto;
 }
 
 app-header    { grid-area: header; }
-app-nav-bar   { grid-area: nav; }
 app-search-bar { grid-area: search; }
-router-outlet  { grid-area: main; }
+main { grid-area: main; }
+
+app-nav-bar {
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 768px){
+  :host{
+    display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);;
+  grid-template-areas:
+  "header search search"
+  "main main main"
+  "nav nav nav";
+}
+
+
+
+app-nav-bar {
+  top: unset;
+  bottom: 0;
+}
+  }

@@ -1,7 +1,4 @@
-
-
-
-
+@use 'mixins' as *;
 h1{
   color: white;
   font-size: 96px;
@@ -21,13 +18,12 @@ p{
 }
 
 .wrapper{
+  @include container;
   margin-left: 32px;
   margin-right: 32px;
   padding: 64px 0;
   height: 100%;
-  display: grid;
-  grid-template-areas:
-  "hero-container-donate hero-container-quick-links";
+  display: flex;
   align-items: center;
   justify-content: space-around;
   overflow: scroll;
@@ -59,7 +55,7 @@ p{
   gap: 16px;
 }
 
-@media screen and (width <= 1250px){
+@media screen and (max-width: 1250px){
   .wrapper{
   display: flex;
   flex-direction: column;
@@ -69,7 +65,7 @@ p{
 
 .hero-container-donate{
   text-align: center;
-  width: fit-content;
+  width: 100%;
 }
 
 .hero-text{
@@ -83,31 +79,28 @@ p{
 
 }
 
-@media screen and (width <= 600px){
+@media (max-width: 768px){
 
   h1{
     font-size: calc(32px + 16px);
   }
 
-
-  .hero-container-donate{
-
-
-    width: fit-content;
-  }
-
-  .wrapper{
-    height: fit-content;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .container{
     all: unset;
   }
+
+  .wrapper{
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+  }
+
+  .hero-container-donate{
+    margin: auto;
+    padding: 0;
+  }
+
+
 
 }
 

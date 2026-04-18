@@ -23,7 +23,7 @@
   background: var(--brand-color-blue);
   height: 125px;
   border-radius: 20px;
-  transition: 0.3s ease;
+  transition: 0.1s ease;
   font-weight: 600;
 }
 .quick-links-container{
@@ -39,10 +39,22 @@
 
 .card:hover{
   backdrop-filter: blur(8px);
-  background: rgba(10, 10, 55, 0.813);
+  background: rgba(10, 10, 55);
+  box-shadow:
+  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
+  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
+  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
 }
 
-@media screen and (width <= 1250px) {
+.card:active{
+  background:rgb(38, 38, 161);
+  box-shadow:
+  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
+  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
+  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
+}
+
+@media screen and (width <= 1025px) {
   .quick-links-title{
     width: 100%;
     text-align: center;

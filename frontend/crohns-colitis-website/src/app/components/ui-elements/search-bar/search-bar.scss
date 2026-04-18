@@ -1,14 +1,16 @@
+@use 'mixins' as *;
+
 .wrapper{
+
   padding: 8px;
   display: flex;
-  justify-content: center;
   width: 100%;
 }
 
 .search-bar{
   color: white;
-
-  width: 300px;
+  @include container;
+  width: 100%;
   height: calc(32px + 16px);
   display: flex;
   align-items: center;
@@ -34,6 +36,7 @@ input, button{
 }
 
 input{
+  width: 100%;
   padding-left: 4px;
 }
 
@@ -46,6 +49,22 @@ button{
 
 button:active{
   background: rgba(255, 255, 255, 0.128);
+}
+
+@media (max-width: 768px){
+  .search-bar{
+    height: 32px;
+  }
+
+  .wrapper{
+    width: 100%;
+  }
+
+  input{
+    &::placeholder{
+      font-size: 8px;
+    }
+  }
 
 }
 

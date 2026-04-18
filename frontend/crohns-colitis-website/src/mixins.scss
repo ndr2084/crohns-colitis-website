@@ -1,0 +1,8 @@
+/*container logic begins*/
+@mixin container{
+  background: rgba(37, 37, 37, 0.169);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.126);
+  border-radius: 20px;
+}
+/*container logic ends*/

@@ -4,10 +4,11 @@ import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import { NavBar } from "./components/nav-bar/nav-bar";
 import { SearchBar } from "./components/ui-elements/search-bar/search-bar";
+import { Hero } from "./pages/hero/hero";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, NavBar, SearchBar],
+  imports: [RouterOutlet, Header, Footer, NavBar, SearchBar, Hero],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
