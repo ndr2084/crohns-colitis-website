@@ -1,5 +1,7 @@
 :host {
   display: grid;
+
+
   gap: 16px;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
@@ -10,9 +12,6 @@
   grid-template-rows: auto;
 }
 
-main{
-  overflow-y: auto;
-}
 
 app-header{
   grid-area: header;
@@ -26,7 +25,12 @@ app-search-bar {
   justify-content: center;
   width: 100%;
 }
-main { grid-area: main; }
+main {
+  grid-area: main;
+  overflow-y: auto;
+  height: 100%;
+
+}
 
 app-nav-bar {
   grid-area: nav;
