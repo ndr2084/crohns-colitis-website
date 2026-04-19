@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuickLinksCard } from './quick-links-card';
+import { DonationCard } from './donation-card';
 
-describe('QuickLinksCard', () => {
-  let component: QuickLinksCard;
-  let fixture: ComponentFixture<QuickLinksCard>;
+describe('DonationCard', () => {
+  let component: DonationCard;
+  let fixture: ComponentFixture<DonationCard>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuickLinksCard]
+      imports: [DonationCard]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(QuickLinksCard);
+    fixture = TestBed.createComponent(DonationCard);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

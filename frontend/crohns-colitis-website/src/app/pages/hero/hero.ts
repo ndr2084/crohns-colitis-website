@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { QuickLinksCard } from "../../components/ui-elements/quick-links-card/quick-links-card";
+import { QuickNavCard } from "./components/quick-nav-card/quick-nav-card";
+import { DonationCard } from "./components/donation-card/donation-card";
 
 @Component({
   selector: 'app-hero',
-  imports: [QuickLinksCard],
+  imports: [QuickNavCard, DonationCard],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
-export class Hero {
-
-}
+export class Hero {}

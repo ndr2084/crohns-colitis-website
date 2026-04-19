@@ -1,112 +1,44 @@
 @use 'mixins' as *;
-h1{
-  color: white;
-  font-size: 96px;
-  font-weight: 800;
-}
 
-.red{
-  color: var(--brand-color-red);
-  text-shadow:
-    0 0 4px rgba(255, 255, 255, 0.894),
-    0 0 12px rgba(255, 255, 255, 0.132),
-    0 0 24px rgba(255, 255, 255, 0.106);
-}
-
-p{
-  color: white;
-}
-
-.wrapper{
+:host {
   @include container;
-  margin-left: 32px;
-  margin-right: 32px;
-  padding: 64px 0;
+  padding: 64px;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  overflow: scroll;
-  overflow-x: hidden;
+  align-items: center;
 }
 
-.hero-container-donate{
-  padding: 32px;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
+app-donation-card{
+  width: 500px;
 }
 
-.hero-text{
-  width: 100%;
-}
-
-.hero-button{
-  height: 50px;
-  border-radius: var(--circular-border-radius);
-  color: white;
-  font-size: 16px;
-}
-
-.button-container{
-  display: flex;
-  gap: 16px;
-}
-
-@media screen and (max-width: 1250px){
-  .wrapper{
+app-quick-nav-card{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 500px;
 }
 
-.hero-container-donate{
-  text-align: center;
-  width: 100%;
-}
+@media (max-width: 1250px) {
 
-.hero-text{
-  text-align: center;
-}
-
-.button-container{
-  display: flex;
-  justify-content: center;
-}
-
-}
-
-@media (max-width: 768px){
-
-  h1{
-    font-size: calc(32px + 16px);
+  app-donation-card{
+    width: 100%;
   }
 
-  .container{
-    all: unset;
+  :host {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
-
-  .wrapper{
-   display: flex;
-   flex-direction: column;
-   gap: 32px;
-  }
-
-  .hero-container-donate{
-    margin: auto;
-    padding: 0;
-  }
-
-
-
 }
 
-
-
-
-
-
-
+@media (max-width: 768px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

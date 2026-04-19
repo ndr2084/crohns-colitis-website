@@ -1,14 +1,13 @@
 :host {
   display: grid;
   height: 100%;
-  gap: 16px;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
   "header header"
-  "search search"
   "nav nav"
+  "search search"
   "main main";
-  grid-template-rows: auto;
+  grid-template-rows: min-content min-content min-content auto;
 }
 
 
@@ -18,24 +17,30 @@ app-header{
 }
 app-search-bar {
   grid-area: search;
+  height: fit-content;
   width: 100%;
-  padding: 8px;
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-main {
-  grid-area: main;
-  overflow-y: auto;
-  height: 100%;
-
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 app-nav-bar {
+  padding-bottom: 20px;
   grid-area: nav;
   position: sticky;
   top: 0;
   z-index: 1000;
+  height: fit-content;
+}
+
+main {
+  grid-area: main;
+  height: 100%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 @media (max-width: 768px){
@@ -52,7 +57,31 @@ app-nav-bar {
 
 
 app-nav-bar {
+  padding-bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: unset;
   bottom: 0;
 }
+
+
+  app-search-bar {
+    padding-top: 4px;
+    padding-right: 18px;
+    padding-bottom: 0;
+    grid-area: search;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  app-header{
+    padding-left: 20px;
+    padding-top: 4px;
+  }
+}
