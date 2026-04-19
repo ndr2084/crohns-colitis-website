@@ -1,12 +1,27 @@
 @use 'mixins' as *;
 
 :host {
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.hero-section {
+  scroll-snap-align: start;
+  height: 100%;
   @include container;
   padding: 64px;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.news-and-events {
+  display: block;
+  height: 100%;
+  scroll-snap-align: start;
 }
 
 app-donation-card{
@@ -22,13 +37,18 @@ app-quick-nav-card{
 }
 
 @media (max-width: 1250px) {
+  :host {
+    overflow-y: visible;
+    scroll-snap-type: none;
+    height: auto;
+  }
 
   app-donation-card{
     width: 100%;
   }
 
-  :host {
-    height: fit-content;
+  .hero-section {
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -36,7 +56,7 @@ app-quick-nav-card{
 }
 
 @media (max-width: 768px) {
-  :host {
+  .hero-section {
     padding: 32px;
     display: flex;
     flex-direction: column;
