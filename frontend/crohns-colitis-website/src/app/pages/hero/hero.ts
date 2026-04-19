@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NewsAndEvents } from "./components/news-and-events/news-and-events";
+import { NewsAndEvents } from "./components/news-and-events-section/news-and-events";
 import { HeroSection } from "./components/hero-section/hero-section";
 
 @Component({
