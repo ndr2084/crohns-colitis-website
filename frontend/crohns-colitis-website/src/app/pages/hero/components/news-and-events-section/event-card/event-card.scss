@@ -1,24 +1,28 @@
 @use 'mixins' as *;
 
-article{
+:host{
   @include container;
   height: fit-content;
   width: 100%;
   display: flex;
+  gap: 16px;
   align-items: center;
+  padding: 16px;
+
 }
 
 .time-location-type{
+  font-weight: 300;
+  font-size: 12px;
   display: flex;
   flex-direction: row;
   height: 100%;
-  align-items: flex-start;
-  gap: 12px;
+  align-items: center;
+  gap: 2px;
 }
 
 .event-thumbnail {
-  margin: 20px;
-  max-height: 85px;
+  max-height: 95px;
   object-fit: cover;
   border-radius: var(--default-border-radius);
 }
@@ -29,6 +33,10 @@ article{
   flex-direction: column;
   height: fit-content;
   justify-content: center;
+}
+
+.card-description{
+  font-weight:  300;
 }
 
 h1{
