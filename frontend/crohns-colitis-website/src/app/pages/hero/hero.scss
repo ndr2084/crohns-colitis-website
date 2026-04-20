@@ -8,18 +8,41 @@
 }
 
 app-hero-section {
-  scroll-snap-align: start;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
+  height: 100%;
 }
 
 app-news-and-events {
   display: flex;
   flex-direction: column;
-  height: 100%;
   scroll-snap-align: start;
+  height: 100%;
 }
+
+app-community-information {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  height: 100%;
+}
+
+app-community-stories {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  height: 100%;
+}
+
+app-related-pages {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  height: 100%;
+}
+
+
 
 
 @media (max-width: 1250px) {
