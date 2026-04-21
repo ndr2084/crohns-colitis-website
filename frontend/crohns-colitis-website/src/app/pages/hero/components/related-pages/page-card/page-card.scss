@@ -1,0 +1,19 @@
+:host{
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid red;
+  height: fit-content;
+}
+
+.sub-card{
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  width: fit-content;
+  border-radius: 20px;
+}

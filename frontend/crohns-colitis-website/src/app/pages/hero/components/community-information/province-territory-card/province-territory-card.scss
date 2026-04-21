@@ -1,0 +1,24 @@
+@use 'mixins' as *;
+:host{
+  width: 100%;
+  height: 100%;
+}
+
+.sub-card-container{
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sub-card{
+  @include container;
+  background: rgb(15, 15, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
