@@ -1,0 +1,29 @@
+/*glass hover animation*/
+@keyframes glass-hover {
+  0% {
+    background: rgba(37, 37, 37, 0.169);
+    border-color: rgba(255, 255, 255, 0.126);
+    box-shadow: none;
+  }
+
+  100% {
+    background: rgba(255, 255, 255, 0.08);
+
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+}
+/*glass hover animation ends*/
+
+/*glass active animation*/
+@keyframes glass-active {
+  0% {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    background: rgba(121, 121, 121, 0.203);
+    box-shadow: 0 0 2px rgb(104, 104, 104);
+  }
+}
+/*glass active animation ends*/

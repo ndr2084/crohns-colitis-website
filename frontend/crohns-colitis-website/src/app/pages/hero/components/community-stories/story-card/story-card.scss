@@ -1,4 +1,5 @@
 @use 'mixins' as *;
+@use 'animations' as *;
 
 :host{
   width: 100%;
@@ -30,6 +31,14 @@
   display: flex;
   gap: 16px;
   padding-right: 20px;
+
+  &:hover {
+    animation: glass-hover 0.4s ease forwards;
+  }
+
+  &:active {
+    animation: glass-active 0.2s ease forwards;
+  }
 }
 
 .title{

@@ -1,13 +1,17 @@
 @use 'mixins' as *;
 :host{
+  @include container;
   width: 100%;
   height: 100%;
   color: white;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .sub-card-container {
-  @include container;
-  padding: 32px;
+  padding-bottom: 20px;
   height: 100%;
   display: flex;
 }

@@ -7,6 +7,11 @@
   scroll-snap-type: y mandatory;
 }
 
+:host > *{
+  margin-bottom: 32px;
+}
+
+
 app-hero-section {
   display: flex;
   flex-direction: column;
@@ -25,7 +30,7 @@ app-community-information {
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
-  height: 100%;
+  height: fit-content;
 }
 
 app-community-stories {

@@ -1,12 +1,17 @@
 @use 'mixins' as *;
 :host{
+  padding: 32px;
   width: 100%;
   height: fit-content;
   color: white;
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .related-pages {
-  @include container;
-  padding: 32px;
+
+
   height: fit-content;
   display: flex;
   flex-direction: row;

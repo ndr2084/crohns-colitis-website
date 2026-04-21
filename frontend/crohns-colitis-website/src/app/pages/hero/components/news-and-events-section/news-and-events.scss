@@ -1,23 +1,25 @@
 @use 'mixins' as *;
 
-
-
+:host{
+  @include container;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .title{
-  color: white;
-  padding-left: 16px;
+  color: rgb(255, 255, 255);
   font-size: 32px;
 }
 
 
 
 .news-and-events {
-  @include container;
   height: 100%;
   overflow-y: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  padding: 32px;
 
   color: white;
 

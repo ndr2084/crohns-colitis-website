@@ -1,19 +1,30 @@
+@use 'mixins' as *;
+@use 'animations' as *;
 :host{
   width: 100%;
   gap: 16px;
   display: flex;
   flex-flow: row wrap;
-  border: 1px solid red;
   height: fit-content;
 }
 
 .sub-card{
+  padding: 8px;
+  font-size: calc(8px + 4px);
+  @include container;
   display: flex;
   height: fit-content;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
   width: fit-content;
   border-radius: 20px;
+
+  &:hover {
+    animation: glass-hover 0.4s ease forwards;
+  }
+
+  &:active {
+    animation: glass-active 0.2s ease forwards;
+  }
 }
