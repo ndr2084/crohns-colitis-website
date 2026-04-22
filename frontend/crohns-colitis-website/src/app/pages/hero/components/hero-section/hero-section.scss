@@ -1,45 +1,54 @@
-@use 'mixins' as *;
 :host{
-  width: 100%;
-  height: 100%;
-  @include container;
-  background: rgb(23, 23, 23);
-}
-.hero-section {
-
-  height: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 128px;
-  justify-content: space-around;
-}
-
-.title{
-  color: white;
-  font-size: 32px;
-  padding-left: 20px;
+  justify-content: space-evenly;
 }
 
 app-donation-card{
-  width: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
 app-quick-nav-card{
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 500px;
 }
 
 @media screen and (max-width: 1250px){
-  .hero-section{
+  :host{
     width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+
+  }
+
+  app-donation-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  app-quick-nav-card{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
   }
 }
+
+
 
 
 

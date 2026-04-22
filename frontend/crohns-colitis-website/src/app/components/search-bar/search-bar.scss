@@ -4,7 +4,7 @@
 .search-bar{
   color: white;
   @include container;
-  width: 500px;
+  width: 400px;
   height: calc(32px + 16px);
   display: flex;
   align-items: center;
@@ -48,6 +48,7 @@ button:active{
 @media (max-width: 768px){
   .search-bar{
     height: 32px;
+    width: fit-content;
   }
 
   .wrapper{

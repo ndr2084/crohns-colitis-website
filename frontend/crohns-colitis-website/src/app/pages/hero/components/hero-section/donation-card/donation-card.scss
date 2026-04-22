@@ -1,13 +1,5 @@
 @use 'mixins' as *;
 
-:host {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-}
-
 h1 {
   color: white;
   font-size: 96px;
@@ -26,10 +18,6 @@ p {
   color: white;
 }
 
-.hero-text {
-  width: 100%;
-}
-
 .hero-button {
   height: 50px;
   border-radius: var(--circular-border-radius);
@@ -43,10 +31,9 @@ p {
 }
 
 @media (max-width: 1250px) {
-  :host {
+
+  h1{
     text-align: center;
-    width: 100%;
-    padding: 32px;
   }
 
   .hero-text {

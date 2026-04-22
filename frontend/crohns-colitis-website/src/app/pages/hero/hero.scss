@@ -13,20 +13,26 @@
 
 
 app-hero-section {
+  @include container;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   scroll-snap-align: start;
   height: 100%;
 }
 
 app-news-and-events {
+  @include container;
+  color: white;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
   height: 100%;
+  padding: 32px;
 }
 
 app-community-information {
+
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
@@ -34,6 +40,7 @@ app-community-information {
 }
 
 app-community-stories {
+
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
@@ -60,7 +67,7 @@ app-related-pages {
   }
 
 
-  .hero-section {
+  app-hero-section {
     height: auto;
     display: flex;
     flex-direction: column;

@@ -9,12 +9,10 @@
   flex-direction: column;
   gap: 16px;
 }
-.related-pages {
 
-
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  gap: 128px;
-  justify-content: space-around;
+app-page-card{
+    gap: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    height: fit-content;
 }
