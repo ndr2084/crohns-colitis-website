@@ -10,7 +10,7 @@
 
 /*container logic ends*/
 @mixin dynamic-link{
-  background: var(--brand-color-blue);
+  cursor: pointer;
   min-width: fit-content;
   width: fit-content;
   display: flex;

@@ -4,6 +4,7 @@
 .card{
   @include container;
   @include dynamic-link;
+
   &:hover {
     animation: glass-hover 0.4s ease forwards;
   }
@@ -11,4 +12,5 @@
   &:active {
     animation: glass-active 0.2s ease forwards;
   }
+
 }

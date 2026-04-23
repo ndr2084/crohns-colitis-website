@@ -9,7 +9,7 @@
   "search search"
   "main main";
   grid-template-rows: min-content min-content min-content auto;
-  padding: 20px;
+
 
 
   /*variables*/
@@ -19,10 +19,10 @@
 
 app-header{
   @include container;
-  background: rgb(1, 47, 100);
+  border-radius: 0;
+  background: var(--brand-color-blue);
   grid-area: header;
   width: 100%;
-  border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,8 +31,12 @@ app-header{
 }
 
 app-nav-bar {
-  color: black;
-  border-radius: 15px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   overflow: hidden;
   grid-area: nav;
   position: sticky;
@@ -89,6 +93,7 @@ app-nav-bar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 
@@ -105,7 +110,6 @@ app-nav-bar {
   }
 
   app-header{
-    border-radius: 20px;
     flex-direction: row;
   }
 
