@@ -76,6 +76,10 @@ app-related-pages {
     display: flex;
     flex-direction: column;
   }
+
+    app-community-stories{
+      overflow-x: hidden;
+    }
 }
 
 @media (max-width: 768px){

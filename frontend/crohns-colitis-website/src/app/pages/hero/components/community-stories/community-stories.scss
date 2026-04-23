@@ -5,13 +5,15 @@ app-story-card-container{
 }
 
 
-@media screen and (max-width: 1250){
-}
+@media screen and (max-width: 1250px){
+  app-story-card-container{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    width: 100%;
 
-@media screen and (max-width: 768px){
-app-story-card-container{
-  display: flex;
-  overflow-y: scroll;
-
-}
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
