@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { EventCard } from "./event-card/event-card";
+import { EventCardContainer } from "./event-card-container/event-card-container";
 
 @Component({
   selector: 'app-news-and-events',
-  imports: [EventCard],
+  imports: [EventCardContainer],
   templateUrl: './news-and-events.html',
   styleUrl: './news-and-events.scss',
 })
