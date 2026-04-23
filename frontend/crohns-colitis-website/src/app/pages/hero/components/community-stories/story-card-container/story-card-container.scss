@@ -10,12 +10,16 @@
   gap: 16px;
 }
 
+.author {
+  font-size: clamp(10px, 1.2vw, 14px);
+}
+
 .title {
-  font-size: calc(16px + 2px);
+  font-size: clamp(12px, 1.5vw, 18px);
 }
 
 .intro {
-  font-size: 14px;
+  font-size: clamp(10px, 1.2vw, 14px);
   font-weight: 200;
 }
 
@@ -41,28 +45,63 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .card {
+    position: relative;
     flex: 0 0 calc((100% - 32px) / 3);
+    aspect-ratio: 4/5;
     height: auto;
+    padding: 0;
+    gap: 0;
     scroll-snap-align: start;
   }
 
   .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .author-title-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: auto;
+    gap: 4px;
+    padding: 16px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  }
+
+  .intro {
+    display: none;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 933px) {
   .card {
-    flex: 0 0 calc(100% - 20px);
+    aspect-ratio: auto;
     height: auto;
-    scroll-snap-align: start;
+    padding: 16px;
   }
 
   .thumbnail {
-    width: 100%;
-    height: auto;
+    display: none;
+  }
+
+  .author-title-description {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 66%;
   }
 }

@@ -19,7 +19,7 @@ app-hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   scroll-snap-align: start;
-  height: 100%;
+
 
 }
 
@@ -72,14 +72,11 @@ app-related-pages {
 @media (max-width: 1250px) {
 
     app-hero-section {
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
   }
 
-    app-community-stories{
-      overflow-x: hidden;
-    }
 }
 
 @media (max-width: 768px){

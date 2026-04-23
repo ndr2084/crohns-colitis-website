@@ -37,7 +37,6 @@ li:hover{
 @media (max-width: 768px){
 :host{
   @include container;
-  background: rgba(23, 23, 23, 0.758);
   border: none;
   border-radius: 0;
 }
