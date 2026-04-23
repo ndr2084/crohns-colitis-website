@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProvinceTerritoryCard } from './province-territory-card';
+import { StoryCardContainer } from './story-card-container';
 
-describe('ProvinceTerritoryCard', () => {
-  let component: ProvinceTerritoryCard;
-  let fixture: ComponentFixture<ProvinceTerritoryCard>;
+describe('StoryCardContainer', () => {
+  let component: StoryCardContainer;
+  let fixture: ComponentFixture<StoryCardContainer>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProvinceTerritoryCard]
+      imports: [StoryCardContainer]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProvinceTerritoryCard);
+    fixture = TestBed.createComponent(StoryCardContainer);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

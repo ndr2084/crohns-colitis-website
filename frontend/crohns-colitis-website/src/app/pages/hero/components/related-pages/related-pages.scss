@@ -1,15 +1,4 @@
 @use 'mixins' as *;
-:host{
-  padding: 32px;
-  width: 100%;
-  height: fit-content;
-  color: white;
-  @include container;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 app-page-card{
     gap: 16px;
     display: flex;

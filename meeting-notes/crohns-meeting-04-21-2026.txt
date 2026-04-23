@@ -1,0 +1,12 @@
+9 permits in total: 
+-vednor permits 
+-permits for fundraiser organizations
+-look for free food vendors
+-find other food vendors perhaps //paid
+	{ 
+	-ice cream truck
+	-taco truck
+	} 
+-printing off posters with C&C logo for participants to sign
+
+-tap to donate type sign 

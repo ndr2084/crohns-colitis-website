@@ -7,4 +7,15 @@
   height: 100%;
   width: 100%;
 }
+
 /*container logic ends*/
+@mixin dynamic-link{
+  background: var(--brand-color-blue);
+  min-width: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  height: fit-content;
+}

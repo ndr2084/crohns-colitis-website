@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { StoryCard } from "./story-card/story-card";
+import { StoryCardContainer } from "./story-card-container/story-card-container";
 
 @Component({
   selector: 'app-community-stories',
-  imports: [StoryCard],
+  imports: [StoryCardContainer],
   templateUrl: './community-stories.html',
   styleUrl: './community-stories.scss',
 })

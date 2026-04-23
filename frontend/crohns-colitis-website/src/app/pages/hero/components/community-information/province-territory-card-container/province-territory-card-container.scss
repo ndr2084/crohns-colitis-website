@@ -1,13 +1,9 @@
 @use 'mixins' as *;
 @use 'animations' as *;
 
-a{
+.card{
   @include container;
   @include dynamic-link;
-  width: fit-content;
-
-
-
   &:hover {
     animation: glass-hover 0.4s ease forwards;
   }
