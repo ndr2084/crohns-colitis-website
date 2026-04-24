@@ -1,43 +1,76 @@
 
+h1 {
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 800;
+  text-align: center;
+}
 
-app-donation-card{
+.red {
+  color: var(--brand-color-red);
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.894),
+    0 0 12px rgba(255, 255, 255, 0.132),
+    0 0 24px rgba(255, 255, 255, 0.106);
+}
+
+.hero-text {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-button {
+  height: 44px;
+  border-radius: var(--circular-border-radius);
+  font-size: 16px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 0 0 25%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.button-container {
+  height: fit-content;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   gap: 16px;
 }
 
-app-quick-nav-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1250px){
-
-
-  app-donation-card{
+@media (max-width: 1250px) {
+  :host {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
   }
 
-  app-quick-nav-card{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+  h1 {
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 60%;
+    text-align: center;
+  }
+
+  .button-container {
     justify-content: center;
   }
 }
 
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
+  .hero-button {
+    flex: 0 auto;
+  }
 
-
-
+  .hero-text{
+    display: none;
+  max-width: 80%;
+  }
+}
