@@ -82,8 +82,10 @@ app-related-pages {
 @media (max-width: 768px){
   :host{
     scroll-snap-type: unset;
+    gap: 32px;
   }
   app-hero-section{
+    gap: 32px;
     height: fit-content;
 }
 

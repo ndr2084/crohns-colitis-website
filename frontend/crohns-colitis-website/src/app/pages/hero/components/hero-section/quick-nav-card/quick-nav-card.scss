@@ -14,7 +14,7 @@ ul{
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.128);
-  background: var(--brand-color-blue);
+
   height: 125px;
   border-radius: 20px;
   transition: 0.1s ease;
@@ -58,6 +58,11 @@ ul{
 
   .card{
     height: 40px;
+  }
+
+  .card-title{
+    width: 100%;
+    text-align: left;
   }
 }
 

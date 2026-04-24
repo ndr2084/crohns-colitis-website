@@ -18,17 +18,24 @@ h1 {
   text-align: center;
 }
 
-p {
-}
 
 .hero-button {
-  height: 50px;
+  height: 44px;
   border-radius: var(--circular-border-radius);
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 50%;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .button-container {
+  height: fit-content;
   display: flex;
+  width: 100%;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -44,6 +51,18 @@ p {
 
   .button-container {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px){
+  .button-container{
+    flex-direction: column;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .hero-button {
+    flex: 0 auto;
   }
 }
 
