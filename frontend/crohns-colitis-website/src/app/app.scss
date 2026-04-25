@@ -56,13 +56,12 @@ main {
 
 @media (max-width: 1250px) {
   :host {
-    height: auto;
-    min-height: 100dvh;
+    height: 100dvh;
   }
 
   main {
-    height: auto;
-    overflow: scroll;
+    height: 100%;
+    overflow-y: hidden;
   }
 }
 

@@ -1,5 +1,4 @@
 .logo{
-  font-size: 16px;
   color: white;
   display: flex;
   cursor: pointer;
@@ -8,10 +7,15 @@
   width: fit-contnet;
 }
 
+h1{
+  font-size: calc(16px + 8px);
+  font-weight: 500;
+}
+
 
 @media (max-width: 768px){
   h1{
-    font-size: 20px;
+    font-size: 16px;
   }
   .logo{
     justify-content: flex-start;

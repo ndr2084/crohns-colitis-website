@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuickNavCard } from './quick-nav-card';
+import { QuickNavContainer } from './quick-nav-container';
 
-describe('QuickNavCard', () => {
-  let component: QuickNavCard;
-  let fixture: ComponentFixture<QuickNavCard>;
+describe('QuickNavContainer', () => {
+  let component: QuickNavContainer;
+  let fixture: ComponentFixture<QuickNavContainer>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuickNavCard]
+      imports: [QuickNavContainer]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(QuickNavCard);
+    fixture = TestBed.createComponent(QuickNavContainer);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

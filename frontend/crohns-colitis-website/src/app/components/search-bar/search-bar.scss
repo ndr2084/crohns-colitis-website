@@ -3,7 +3,8 @@
 
 .search-bar{
   color: white;
-  @include container;
+  border: 1px solid rgb(58, 58, 58);
+  border-radius: 5px;
   width: 400px;
   height: calc(32px + 8px);
   display: flex;
@@ -11,7 +12,6 @@
   justify-content: center;
   padding: 4px;
   font-size: 14px;
-  border-radius: var(--circular-border-radius);
   transition: background 0.3s ease;
 }
 

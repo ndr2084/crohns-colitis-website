@@ -4,11 +4,11 @@ import { HeroSection } from "./components/hero-section/hero-section";
 import { CommunityStories } from "./components/community-stories/community-stories";
 import { CommunityInformation } from "./components/community-information/community-information";
 import { RelatedPages } from "./components/related-pages/related-pages";
-import { QuickNavCard } from "./components/quick-nav-card/quick-nav-card";
+import { QuickNavContainer } from "./components/quick-nav-container/quick-nav-container";
 
 @Component({
   selector: 'app-hero',
-  imports: [NewsAndEvents, HeroSection, CommunityStories, CommunityInformation, RelatedPages, QuickNavCard],
+  imports: [NewsAndEvents, HeroSection, CommunityStories, CommunityInformation, RelatedPages, QuickNavContainer],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
