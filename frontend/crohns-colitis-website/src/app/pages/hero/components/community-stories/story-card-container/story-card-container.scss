@@ -27,11 +27,11 @@
   }
 }
 
-@media screen and (min-width: 1250px) {
-  .author-title-description {
+
+.author-title-description {
+    padding: 10px;
     overflow: hidden;
     mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  }
 }
 
 .author {

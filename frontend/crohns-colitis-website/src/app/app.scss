@@ -19,8 +19,9 @@
 
 app-header{
   @include container;
+  color: black;
   border-radius: 0;
-  background: var(--brand-color-blue);
+  background: rgb(233, 231, 231);
   grid-area: header;
   width: 100%;
   display: flex;
@@ -31,8 +32,9 @@ app-header{
 }
 
 app-nav-bar {
+  background: var(--brand-color-blue);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(99, 99, 99, 0.157);
   border-radius: 0px;
   border-top: 0;
   border-left: 0;

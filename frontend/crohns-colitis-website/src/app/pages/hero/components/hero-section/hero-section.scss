@@ -1,3 +1,13 @@
+@use 'mixins' as *;
+app-quick-nav-container{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
 
 h1 {
 font-size: calc(32px + 16px);
@@ -9,57 +19,71 @@ font-size: calc(32px + 16px);
   color: var(--brand-color-red);
 }
 
-.hero-text {
-  max-width: 50%;
-  margin: 0 auto;
-  text-align: center;
+.hero-text{
+  max-width: 60%;
+}
+
+.main-hero-component{
+
+  width: 80%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .hero-button {
+  @include container;
   height: 44px;
   border-radius: 10px;
   font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 25%;
+  flex: 0 0 30%;
   border: 1px solid white;
   cursor: pointer;
 }
 
 .button-container {
   height: fit-content;
+  width: 85%;
   display: flex;
-  width: 50%;
-  justify-content: center;
+  flex: 1 1 0;
+  justify-content: flex-start;
   gap: 16px;
 }
 
 @media (max-width: 1250px) {
-  :host {
-    width: 100%;
-  }
 
-  h1 {
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 60%;
-    text-align: center;
-  }
 
   .button-container {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+
+  app-quick-nav-container{
+    width: 100%;
+  }
+
+  .main-hero-component{
+    flex: 1 1 75%;
+    width: fit-content;
+  }
+
+  .button-container {
+    width: 100%;
+  }
 
 
   .hero-button {
     font-size: 10px;
-    flex: 0 0 60%;
+    flex: 1 1 0;
+    height: fit-content;
+    padding: 4px;
 
   }
 
@@ -73,5 +97,8 @@ font-size: calc(32px + 16px);
   }
   .hero-title{
     display: flex;
+    text-align: center;
   }
+
+
 }

@@ -6,6 +6,8 @@
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  background: linear-gradient(0deg, #000000 0%, #71316c 100%)
+
 }
 
 
@@ -16,27 +18,21 @@
 
 
 app-hero-section {
+  padding-top: 150px;
   font-size: 12px;
   color: white;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   scroll-snap-align: start;
-
-
+  background-image: linear-gradient(to right, rgba(80, 0, 160, 0.483) 30%, rgba(120, 40, 200, 0.5) 60%, rgba(120, 40, 200, 0.1)), url('../../../../public/hero-background-final.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-app-quick-nav-container {
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  scroll-snap-align: start;
-  height: fit-content;
-}
 
 app-news-and-events {
   color: white;
@@ -86,6 +82,7 @@ app-related-pages {
   }
 
   app-hero-section {
+    padding-top: unset;
     padding-left: 0;
     height: 100%;
     display: flex;
@@ -103,7 +100,10 @@ app-related-pages {
   app-hero-section{
     gap: 16px;
     height: 100%;
+    display: flex;
   }
+
+
 
   app-news-and-events{
     height: fit-content;
