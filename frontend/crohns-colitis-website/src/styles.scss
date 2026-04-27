@@ -2,12 +2,12 @@
 :root{
   --brand-color-red: #C72526;
   --brand-color-blue: #1E155D;
+  --primary-button-blue: rgba(10, 10, 55, 0.64);
   --brand-color-yellow: #F7E8D1;
   --highlight: rgb(253, 254, 176);
   --default-border-radius: 20px;
   --circular-border-radius: 100px;
   --default-padding: 8px;
-background: black;
 
 }
 
@@ -51,11 +51,28 @@ all: unset;
 /*button logic begins*/
 
 .secondary{
-  background: rgb(111, 111, 111);
+  background: rgba(0, 0, 0, 0.388);
 }
 
 .primary{
-background: var(--brand-color-blue);
+  background: var(--primary-button-blue);
+}
+
+.primary:hover{
+  backdrop-filter: blur(8px);
+  background: rgba(10, 10, 55);
+  box-shadow:
+  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
+  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
+  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
+}
+
+.primary:active{
+  background:rgb(38, 38, 161);
+  box-shadow:
+  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
+  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
+  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
 }
 
 .large{
