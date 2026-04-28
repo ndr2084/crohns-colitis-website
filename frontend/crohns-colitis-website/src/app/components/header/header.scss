@@ -34,7 +34,10 @@ app-nav-bar {
 
 
   .mobile-hamburger{
-    display: block;
+    padding-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
