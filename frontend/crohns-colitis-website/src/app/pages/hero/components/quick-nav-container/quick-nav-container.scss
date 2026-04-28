@@ -42,29 +42,9 @@ width: 100%;
   0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
 }
 
-@media screen and (max-width: 1250px) {
-
-
-
-  .card-title{
-    width: 100%;
-    text-align: left;
-  }
-
-  ul{
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-  }
-
-  .card{
-    flex: 0 0 25%;
-  }
-
 @media screen and (max-width: 768px){
   ul{
-    height: fit-content;
+
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -76,9 +56,10 @@ width: 100%;
   }
 
   .card{
-    height: fit-content;
-    flex: 0 0 20%;
+
+    flex: 0 0 25%;
     scroll-snap-align: start;
+    height: fit-content;
     font-size: 12px;
   }
 
@@ -97,9 +78,4 @@ width: 100%;
   }
 }
 
-
-
-
-
-}
 
