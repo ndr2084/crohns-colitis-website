@@ -13,7 +13,10 @@ h1{
 
 app-nav-bar {
   flex: 1 1 0;
+}
 
+.mobile-hamburger{
+  display: none;
 }
 
 
@@ -27,6 +30,11 @@ app-nav-bar {
   }
   .colitis-logo{
     width: 16px;
+  }
+
+
+  .mobile-hamburger{
+    display: block;
   }
 }
 

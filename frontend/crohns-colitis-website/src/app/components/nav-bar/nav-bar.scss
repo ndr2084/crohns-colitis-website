@@ -1,5 +1,7 @@
 @use 'mixins' as *;
 
+
+
 nav{
   width: 100%;
   display: flex;
@@ -32,6 +34,10 @@ li:hover{
 }
 
 @media (max-width: 768px){
+
+ul{
+  display: none;
+}
 :host{
   border: none;
   border-radius: 0;
