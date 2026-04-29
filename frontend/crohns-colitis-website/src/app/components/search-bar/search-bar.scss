@@ -1,18 +1,21 @@
 @use 'mixins' as *;
 
-
-.search-bar{
-
-  border: 1px solid rgb(58, 58, 58);
-  border-radius: 5px;
-  height: calc(32px + 8px);
+:host{
   display: flex;
+  border: 1px solid rgba(58, 58, 58, 0.487);
+  border-radius: 4px;
+  display: flex;
+  height: 100%;
   flex: 0 0 1;
   align-items: center;
   justify-content: center;
-  padding: 4px;
   font-size: 14px;
+  height: 80%;
   transition: background 0.3s ease;
+}
+
+input::placeholder{
+  font-size: 9px;
 }
 
 .icon{
@@ -32,6 +35,7 @@ input, button{
 input{
   width: 100%;
   padding-left: 4px;
+  height: 100%;
 }
 
 button{
@@ -43,23 +47,5 @@ button{
 
 button:active{
   background: rgba(255, 255, 255, 0.128);
-}
-
-@media (max-width: 768px){
-  .search-bar{
-    height: 32px;
-    width: fit-content;
-  }
-
-  .wrapper{
-    width: 100%;
-  }
-
-  input{
-    &::placeholder{
-      font-size: 8px;
-    }
-  }
-
 }
 

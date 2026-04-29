@@ -10,10 +10,17 @@ app-event-card-container{
     width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 32px;
     align-items: center;
-    padding: 16px;
 }
+
+@media (max-width: 768px){
+  app-event-card-container{
+
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 

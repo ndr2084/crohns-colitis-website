@@ -7,8 +7,8 @@ width: 100%;
 
 
 .card{
-  background: rgba(10, 10, 55, 0.64);
   @include container;
+  background: rgba(10, 10, 55, 0.64);
   color: grey;
   width: 100%;
   text-align: center;
@@ -49,6 +49,7 @@ width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    height: 100%;
 
     &::-webkit-scrollbar {
       display: none;

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar-mobile',
@@ -7,5 +7,4 @@ import { Component, input } from '@angular/core';
   styleUrl: './nav-bar-mobile.scss',
 })
 export class NavBarMobile {
-  isOpen = input<boolean>(false);
-}
+  }

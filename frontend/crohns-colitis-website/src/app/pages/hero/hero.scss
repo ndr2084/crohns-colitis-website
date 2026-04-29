@@ -6,7 +6,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
-  background: linear-gradient(0deg, #000000 0%, #71316c 100%)
+  background: rgba(0, 0, 0, 0.119);
 
 }
 
@@ -15,7 +15,6 @@
 
   margin-bottom: 32px;
 }
-
 
 app-hero-section {
   font-size: 12px;
@@ -26,7 +25,7 @@ app-hero-section {
   justify-content: space-around;
   align-items: center;
   scroll-snap-align: start;
-  background-image: linear-gradient(to right, rgba(80, 0, 160, 0.483) 30%, rgba(120, 40, 200, 0.5) 60%, rgba(120, 40, 200, 0.1)), url('../../../../public/hero-background-final.png');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.483) 30%, rgba(40, 18, 62, 0.5) 60%, rgba(120, 40, 200, 0.1)), url('../../../../public/hero-background-final.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +33,7 @@ app-hero-section {
 
 
 app-news-and-events {
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
@@ -44,7 +43,7 @@ app-news-and-events {
 
 app-community-information {
   width: 100%;
-  color: white;
+  color: black;
   display: flex;
   gap: 8px;
   flex-direction: column;
@@ -55,7 +54,7 @@ app-community-information {
 app-community-stories {
   width: 100%;
   height: fit-content;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
@@ -64,7 +63,7 @@ app-community-stories {
 
 app-related-pages {
   width: 100%;
-  color: white;
+  color: black;
   display: flex;
   gap: 8px;
   flex-direction: column;
