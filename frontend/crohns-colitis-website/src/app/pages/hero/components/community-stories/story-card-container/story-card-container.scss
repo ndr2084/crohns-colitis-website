@@ -2,7 +2,9 @@
 @use 'animations' as *;
 
 
-
+.intro {
+  display: none;
+}
 .author-title-description {
   padding: 8px;
   height: 100%;
@@ -90,9 +92,7 @@
 
   }
 
-  .intro {
-    display: none;
-  }
+
 }
 
 
