@@ -10,7 +10,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .thumbnail{
@@ -18,8 +18,8 @@
 }
 
 .card{
-  @include container;
-  flex: 1 1 0;
+flex: 1 1 0;
+
 }
 
 
@@ -27,7 +27,6 @@
 
 .author-title-description {
     overflow: hidden;
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 .author {
@@ -46,14 +45,11 @@
 
 .card {
   padding: 4px;
-  border-right: 1px solid rgba(20, 20, 20, 0.128);
-
   height: 100%;
   overflow: hidden;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
   border-radius: 20px;
 
 }

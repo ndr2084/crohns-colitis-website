@@ -5,14 +5,40 @@
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  background: #FFFFFF;
-
+  background: #e9eaf7;
+  scroll-snap-type: y mandatory;
 }
 
 
 :host > *{
 
   margin-bottom: 16px;
+}
+
+.hero-page-one{
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.hero-page-two{
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.hero-page-two-group-0{
+
+  display: flex;
+  gap: 16px;
+  height: 100%;
+}
+
+.hero-page-three{
+  height: 100%;
+  scroll-snap-align: start;
 }
 
 app-hero-section {
@@ -31,26 +57,29 @@ app-hero-section {
 
 
 app-news-and-events {
+  @include container;
   color: black;
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 100%;
 
 }
 
 app-community-information {
+  @include container;
   width: 100%;
   color: black;
   display: flex;
   gap: 8px;
   flex-direction: column;
-  height: fit-content;
+  height: 100%;
 }
 
 app-community-stories {
+  @include container;
+  padding: 8px 16px;
   color: black;
   border-radius: 20px;
-  padding: 20px;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -71,7 +100,6 @@ app-related-pages {
 
 
 @media (max-width: 1250px) {
-  :host {
 
   app-hero-section {
     padding-top: unset;
@@ -80,7 +108,18 @@ app-related-pages {
     flex-direction: column;
     gap: 32px;
   }
-}
+  .hero-page-two{
+
+    display: flex;
+    gap: 16px;
+    height: fit-content;
+  }
+
+  .hero-page-two-group-0{
+
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px){

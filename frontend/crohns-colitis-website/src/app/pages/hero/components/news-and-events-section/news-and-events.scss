@@ -2,7 +2,7 @@
 @use 'animations' as *;
 
 h1{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 550;
 }
 
@@ -10,7 +10,7 @@ app-event-card-container{
     height: fit-content;
     width: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 32px;
     align-items: center;
 }

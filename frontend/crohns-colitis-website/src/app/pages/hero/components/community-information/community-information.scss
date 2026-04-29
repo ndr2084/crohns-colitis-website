@@ -3,17 +3,19 @@
 }
 
 h1{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 550;
+
 }
 
 app-province-territory-card-container{
+
     height: fit-content;
     height: 100%;
     gap: 16px;
-    width: fit-content;
     display: flex;
-    flex-flow: row wrap;
+    flex: 0 0 1;
+    flex-flow: column;
   }
 
 

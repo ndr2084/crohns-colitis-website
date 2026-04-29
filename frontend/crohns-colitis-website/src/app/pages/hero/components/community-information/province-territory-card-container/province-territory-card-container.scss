@@ -1,6 +1,18 @@
 @use 'mixins' as *;
 @use 'animations' as *;
 
+h2{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.provinces{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+}
+
+
 .card{
   @include container;
   @include dynamic-link;
