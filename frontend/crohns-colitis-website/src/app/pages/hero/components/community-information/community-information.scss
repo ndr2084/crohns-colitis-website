@@ -2,6 +2,11 @@
   font-size: 12px;
 }
 
+h1{
+  font-size: 28px;
+  font-weight: 550;
+}
+
 app-province-territory-card-container{
     height: fit-content;
     height: 100%;
@@ -9,8 +14,6 @@ app-province-territory-card-container{
     width: fit-content;
     display: flex;
     flex-flow: row wrap;
-
-
   }
 
 

@@ -5,15 +5,14 @@
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  background: rgba(0, 0, 0, 0.119);
+  background: #FFFFFF;
 
 }
 
 
 :host > *{
 
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 app-hero-section {
@@ -24,8 +23,7 @@ app-hero-section {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  scroll-snap-align: start;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.483) 30%, rgba(40, 18, 62, 0.5) 60%, rgba(120, 40, 200, 0.1)), url('../../../../public/hero-background-final.png');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.483) 30%, rgba(40, 18, 62, 0.5) 60%, rgba(120, 40, 200, 0.196)), url('../../../../public/hero-background-final.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +34,6 @@ app-news-and-events {
   color: black;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
   height: fit-content;
 
 }
@@ -47,17 +44,17 @@ app-community-information {
   display: flex;
   gap: 8px;
   flex-direction: column;
-  scroll-snap-align: start;
   height: fit-content;
 }
 
 app-community-stories {
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
   width: 100%;
   height: fit-content;
-  color: black;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
 
 }
 
@@ -67,7 +64,6 @@ app-related-pages {
   display: flex;
   gap: 8px;
   flex-direction: column;
-  scroll-snap-align: start;
   height: fit-content;
 }
 
@@ -76,8 +72,6 @@ app-related-pages {
 
 @media (max-width: 1250px) {
   :host {
-    scroll-snap-type: y mandatory;
-  }
 
   app-hero-section {
     padding-top: unset;
@@ -90,7 +84,6 @@ app-related-pages {
 
 @media (max-width: 768px){
   :host{
-    scroll-snap-type: y mandatory;
     gap: 32px;
   }
 

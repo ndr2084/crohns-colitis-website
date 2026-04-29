@@ -19,9 +19,9 @@ app-nav-bar-mobile{
 app-header{
 
   @include container;
-  background: rgb(255, 255, 255);
+
   color: black;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.685);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.064);
   border-radius: 0;
   flex: 0 0 3%;
   width: 100%;
@@ -64,7 +64,7 @@ main {
 
   app-nav-bar-mobile{
     display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.666);
   }
 
 

@@ -10,9 +10,8 @@ nav{
 
 ul{
   width: 100%;
-
   cursor: pointer;
-  font-size: 0.65em;
+  font-size: 0.70em;
   font-weight: 400;
   display: flex;
   justify-content: space-around;
@@ -20,6 +19,8 @@ ul{
 }
 
 li{
+  border-radius: 8px;
+  overflow: hidden;
   height: 100%;
   display: flex;
   padding: 0.5em;
@@ -30,7 +31,8 @@ li{
 }
 
 li:hover{
-  background: rgba(255, 255, 255, 0.064);
+  background: rgba(188, 195, 255, 0.652);
+
 }
 
 @media (max-width: 768px){
