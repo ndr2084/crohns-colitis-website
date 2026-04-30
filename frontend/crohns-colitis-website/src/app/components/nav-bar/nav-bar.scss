@@ -19,7 +19,7 @@ ul{
 }
 
 li{
-  border-radius: 8px;
+  border-radius: var(--default-border-radius);
   overflow: hidden;
   height: 100%;
   display: flex;

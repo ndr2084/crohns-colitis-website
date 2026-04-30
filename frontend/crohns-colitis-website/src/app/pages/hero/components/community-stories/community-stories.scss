@@ -1,9 +1,13 @@
 @use 'mixins' as *;
+
+
 app-story-card-container{
 
-  height: fit-content;
+
+  height: 100%;
   display: flex;
   gap: 16px;
+  overflow: hidden;
 }
 
 h1{
@@ -16,8 +20,7 @@ h1{
 
 @media screen and (max-width: 1250px){
   app-story-card-container{
-    background-color: rgba(121, 121, 121, 0.203);
-    padding: 8px;
+    border-radius: var(--default-border-radius);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;

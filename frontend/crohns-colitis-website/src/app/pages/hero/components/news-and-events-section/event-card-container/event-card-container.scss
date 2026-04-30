@@ -46,14 +46,11 @@
 }
 
 .card{
-  padding: 8px;
+  padding: 4px;
   @include container;
-  overflow: hidden;
-  border-radius: 8px;
-  height: 100%;
+  border-radius: var(--default-border-radius);
   display: flex;
   flex-direction: row;
-  height: fit-content;
 }
 
 .card-description{
@@ -85,6 +82,12 @@
 
 @media screen and (max-width: 1250px) {
 
+  .group{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid
+  }
+
   .card-text{
     display: flex;
     gap: 8px;
@@ -95,15 +98,14 @@
     gap: 4px;
   }
 
-  .time-location-type{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
 
   .card-title-and-intro{
     display: flex;
     justify-content: space-between;
   }
+}
 
+@media screen and (max-width: 500px) {
 
 }

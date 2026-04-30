@@ -9,12 +9,10 @@ h1{
 }
 
 app-province-territory-card-container{
-
-    height: fit-content;
     height: 100%;
     gap: 16px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
   }
 
 
