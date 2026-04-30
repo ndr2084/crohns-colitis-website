@@ -12,6 +12,10 @@ h2{
   gap: 8px;
 }
 
+a{
+  font-size: 13px;
+}
+
 
 .card{
   @include container;
