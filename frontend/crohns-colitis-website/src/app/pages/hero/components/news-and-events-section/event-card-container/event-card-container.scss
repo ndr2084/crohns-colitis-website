@@ -12,7 +12,7 @@
   justify-content: flex-start;
   align-items: start;
 
-  gap: 16px;
+  gap: 8px;
 }
 
 .info{
@@ -21,44 +21,58 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-
-  svg {
-    flex: 0 0 18px;
-    height: 18px;
-  }
 }
 
-.event-thumbnail {
-  max-height: 95px;
-  object-fit: cover;
-  border-radius: var(--default-border-radius);
+svg {
+  flex: 0 0 18px;
+  height: 18px;
 }
 
 .thumbnail-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: thumbnail-container;
+  width: fit-content;
+  height: fit-content;
+}
 
-  padding: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
 
+.event-thumbnail {
+  object-fit: cover;
+  border-radius: var(--default-border-radius);
+  height: 75px;
+  grid-area: thumbnail;
+}
+
+.group{
+  grid-area: group;
+  height: fit-content;
 }
 
 .card{
-  padding: 4px;
+  /*NOTE: you MUST use thumbnail-container for the grid area.
+  **Since it doesn't have an assigned height, '.' will take the height of the time-location-type div
+  */
+  padding: 8px;
   @include container;
   border-radius: var(--default-border-radius);
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-areas:
+    "thumbnail-container  group"
+    "thumbnail-container card-title-and-intro"
+    ;
+  width: fit-content;
+  height: fit-content;
+  gap: 8px;
+
+  grid-template-rows: 20% 80%;
 }
 
 .card-description{
   font-weight:  300;
+  height: 100%;
 }
 
 .card-title{
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .card-description{
@@ -66,10 +80,12 @@
 }
 
 .card-title-and-intro{
+  grid-area: card-title-and-intro;
   display: flex;
+  height: fit-content;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
+
+
 }
 
 .card-text{
@@ -82,30 +98,31 @@
 
 @media screen and (max-width: 1250px) {
 
-  .group{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .card{
+  grid-template-areas:
+  "group group"
+  "thumbnail-container card-title-and-intro"
+  ;
   }
 
-  .card-text{
-    display: flex;
-    gap: 8px;
+  .time-location-type{
+    font-size: 8px;
   }
 
   .info{
     display: flex;
-    gap: 4px;
+    justify-content: center;
+    align-items: center;
   }
 
 
 
-  .card-title-and-intro{
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
-@media screen and (max-width: 500px) {
+
 
 }
