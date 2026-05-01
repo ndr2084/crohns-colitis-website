@@ -1,21 +1,28 @@
 @use 'mixins' as *;
+@use 'animations' as *;
 
-.group{
-  padding: 20px;
-  display: flex;
-  gap: 16px;
+.group {
   width: 100%;
-
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: unset;
-
-
 }
 
+.track {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-.card{
+.card.duplicate {
+  display: none;
+}
+
+.card {
   @include container;
   background: rgba(10, 10, 55, 0.64);
   color: grey;
@@ -31,64 +38,59 @@
   font-weight: 600;
 }
 
-.card:hover{
+.card:hover {
   backdrop-filter: blur(8px);
   background: rgba(10, 10, 55);
   box-shadow:
-  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
-  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
-  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
+    0 0 0px rgba(255, 255, 255, 0.8),
+    0 0 0px rgba(255, 255, 255, 0.4),
+    0 0 5px rgba(255, 255, 255, 0.1);
 }
 
-.card:active{
-  background:rgb(38, 38, 161);
+.card:active {
+  background: rgb(38, 38, 161);
   box-shadow:
-  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
-  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
-  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
+    0 0 0px rgba(255, 255, 255, 0.8),
+    0 0 0px rgba(255, 255, 255, 0.4),
+    0 0 5px rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 1250px){
-  .card{
-    flex: 0 0 15%;
+@media screen and (max-width: 1250px) {
+  .group {
+    overflow: hidden;
+    padding: 20px 0;
   }
-}
 
-@media screen and (max-width: 768px){
-  .group{
+  .track {
+    height: 100%;
+    width: max-content;
+    justify-content: flex-start;
+    animation: marquee 12s linear infinite;
+  }
 
+  .card.duplicate {
     display: flex;
-
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    min-height: 0;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
-  .card{
-
-    flex: 0 0 14%;
-    scroll-snap-align: start;
-
-    font-size: 12px;
+  .card {
+    flex: 0 0 20vw;
   }
 
-  .card-title{
-    width: 100%;
-    text-align: left;
-  }
 
-  svg{
-    height: 24px;
-    width: 24px;
-  }
 
-  a{
+  a {
     font-size: 10px;
   }
 }
 
+@media screen and (max-width: 768px) {
 
+  svg{
+    height: 20px;
+  }
+
+  a {
+    font-size: 8px;
+  }
+
+}
