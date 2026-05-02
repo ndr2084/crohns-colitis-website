@@ -54,14 +54,16 @@
 
 
 app-hero-section {
-
+  display: grid;
+  grid-template-areas:
+  "main-hero-component"
+  "app-quick-nav-container"
+  ;
+  grid-template-rows: 70% 30%;
   font-size: 12px;
   color: white;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.483) 30%, rgba(0, 0, 0, 0.428) 60%, rgba(120, 40, 200, 0.196)), url('../../../../public/hero-background-final.png');
   background-size: cover;
   background-position: center;
@@ -133,13 +135,7 @@ app-related-pages {
     scroll-snap-align: none;
   }
 
-  app-hero-section {
-    padding-top: unset;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
+
 
   .hero-page-two{
     display: none;
@@ -181,18 +177,17 @@ app-related-pages {
     scroll-snap-align: start;
   }
 
+  app-hero-section{
+    grid-template-rows: 65% 35%;
+  }
+
 
 }
 
 @media (max-width: 768px){
-  :host{
-    gap: 32px;
-  }
 
   app-hero-section{
-    gap: 16px;
-    height: 100%;
-    display: flex;
+    grid-template-rows: 65% auto;
   }
 
   app-community-information{
