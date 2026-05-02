@@ -5,33 +5,34 @@
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  background: #d4ddff;
+  background: #d1d9ff;
   scroll-snap-type: y mandatory;
-  --section-padding: 8px 16px;
+  --section-padding: 8px 8px;
 }
 
 
 :host > *{
 
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .hero-page-one{
+  padding: 8px;
   height: 100%;
   scroll-snap-align: start;
 }
 
 .hero-page-two{
-  padding: 16px;
+  padding: 8px;
   display: flex;
-  gap: 16px;
+  gap: 8px;
   flex-direction: column;
   height: 100%;
   scroll-snap-align: start;
 }
 
 .hero-page-two-group-0{
-  gap: 16px;
+  gap: 8px;
   display: flex;
   height: 100%;
   overflow: hidden;
@@ -41,7 +42,7 @@
 .hero-page-two-group-0-subsection-0{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   height: 100%;
   flex: 1 1 0;
 
@@ -59,11 +60,13 @@ app-hero-section {
   "main-hero-component"
   "app-quick-nav-container"
   ;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 70% 30%;
+  padding: var(--default-padding);
   font-size: 12px;
   color: white;
   height: 100%;
-
+  border-radius: var(--default-border-radius);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.483) 30%, rgba(0, 0, 0, 0.428) 60%, rgba(120, 40, 200, 0.196)), url('../../../../public/hero-background-final.png');
   background-size: cover;
   background-position: center;
@@ -135,6 +138,10 @@ app-related-pages {
     scroll-snap-align: none;
   }
 
+  .hero-page-one{
+    height: 100%;
+  }
+
 
 
   .hero-page-two{
@@ -179,6 +186,7 @@ app-related-pages {
 
   app-hero-section{
     grid-template-rows: 65% 35%;
+    height: 100%;
   }
 
 
@@ -188,6 +196,12 @@ app-related-pages {
 
   app-hero-section{
     grid-template-rows: 65% auto;
+    border-radius: 0;
+
+  }
+
+  .hero-page-one{
+    padding: 0;
   }
 
   app-community-information{

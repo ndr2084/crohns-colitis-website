@@ -16,17 +16,19 @@
   font-size: clamp(10px, 3.5cqw, 15px);
   flex: 1;
   overflow: hidden;
+  font-weight: 550
 }
 
 .card {
   position: relative;
-  flex: 1 1 0;
-  aspect-ratio:9/10;
+  aspect-ratio:8/10;
   overflow: hidden;
   border-radius: var(--default-border-radius);
   padding: 0;
   scroll-snap-align: start;
   container-type: inline-size;
+  flex: 1 1 0 ;
+
 }
 
 .thumbnail {
@@ -51,7 +53,7 @@
   gap: 4px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.55);
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -61,6 +63,13 @@
 @media screen and (max-width: 1250px) {
   .card{
   flex: 0 0 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card{
+  flex: 0 0 43%;
+  aspect-ratio: 1/1;
   }
 }
 

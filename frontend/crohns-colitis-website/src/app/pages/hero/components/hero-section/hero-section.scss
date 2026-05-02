@@ -1,45 +1,41 @@
 @use 'mixins' as *;
 
 app-quick-nav-container{
+  height: fit-content;
     width: 100%;
     grid-area: app-quick-nav-container;
 }
 
 h1 {
-font-size: calc(32px + 16px);
+  font-size: clamp(22px, 5vw, 48px);
   font-weight: 400;
-  text-align: center;
 }
 
 .red {
   color: var(--brand-color-red);
 }
 
-.hero-text{
-  max-width: 60%;
-}
-
 .main-hero-component{
   grid-area: main-hero-component;
-  padding-left: 20px;
-  width: fit-content;
+  width: 60%;
   gap: 16px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+
 }
 
 .hero-button {
   @include container;
-  height: 50px;
+  width: auto;
+  height: auto;
+  flex: 1 1 0;
+  padding: 8px 16px;
   border-radius: var(--default-border-radius);
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 22px);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(10%, 30vw, 30%);
   border: 1px solid white;
   cursor: pointer;
 }
@@ -47,49 +43,37 @@ font-size: calc(32px + 16px);
 
 .button-container {
   height: fit-content;
-  width: 85%;
+  width: 95%;
   display: flex;
-
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
 }
 
 
-@media (max-width: 800px) {
 
 
-  .main-hero-component{
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-
-  .hero-button {
-    height: 25px;
-    padding: 4px;
-
-  }
-
+@media (max-width: 768px) {
   .hero-text{
     display: none;
-  max-width: 80%;
   }
 
-  h1{
-    font-size: 32px;
+  .main-hero-component{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  .hero-title{
-    display: flex;
-    text-align: center;
+
+  .button-container{
+    width: 75%;
+  }
+
+  h1 {
+    font-size: clamp(28px, 8vw, 48px);
   }
 
 
 }
+
+
+
+
