@@ -8,6 +8,7 @@
   --default-border-radius: 10px;
   --circular-border-radius: 100px;
   --default-padding: 8px;
+  --brand-color-white: #CECECE;
 
 }
 
@@ -51,11 +52,11 @@ all: unset;
 /*button logic begins*/
 
 .secondary{
-  background: rgba(0, 0, 0, 0.388);
+  background: var(--brand-color-white);
 }
 
 .primary{
-  background: var(--primary-button-blue);
+  background: var(--brand-color-red);
 }
 
 .primary:hover{

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { QuickNavContainer } from "../quick-nav-container/quick-nav-container";
+import { SocialMediaBar } from "../../../../components/social-media-bar/social-media-bar";
 
 @Component({
   selector: 'app-hero-section',
-  imports: [QuickNavContainer],
+  imports: [SocialMediaBar],
   templateUrl: './hero-section.html',
   styleUrl: './hero-section.scss',
 })

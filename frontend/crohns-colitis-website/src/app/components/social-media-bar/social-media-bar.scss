@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+}
+
+.social-media-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(64px + 16px);
+  padding: 16px 8px;
+  background: transparent;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  svg {
+    width: clamp(24px, 2.5vw, 36px);
+    height: clamp(24px, 2.5vw, 36px);
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1250px) {
+  .social-media-bar {
+    flex-direction: row;
+    gap: 32px;
+    padding: 8px 16px;
+  }
+
+}
