@@ -1,34 +1,68 @@
 @use 'mixins' as *;
 
-
 app-story-card-container{
-
-
   height: 100%;
+  width: 100%;
+  display: block;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar { display: none; }
+}
+
+.title-group {
   display: flex;
-  gap: 16px;
-  overflow: hidden;
+  flex-direction: column;
 }
 
-h1{
-  font-size: 22px;
-  font-weight: 550;
+.carousel-wrapper {
+  position: relative;
+  height: 100%;
 }
 
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgb(64, 64, 64);
+  background: rgba(255, 255, 255, 0.128);
+  cursor: pointer;
+  transition: background 0.15s ease;
 
-
-
-@media screen and (max-width: 1250px){
-  app-story-card-container{
-    border-radius: var(--default-border-radius);
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    width: 100%;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  svg {
+    width: 16px;
+    height: 16px;
   }
+
+  &:hover { background: rgba(193, 193, 193, 0.256); }
+  &:active { background: rgba(255, 255, 255, 0.6); }
+
+  &--left  { left: 2%; }
+  &--right { right: 2%; }
 }
+
+h1 {
+  font-size: clamp(18px, 2vw + 0.5rem, 32px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(11px, 1vw + 0.25rem, 16px);
+  font-weight: 400;
+  line-height: 1.2;
+  padding-left: var(--subtitle-indent);
+}
+
+
+
+
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,5 +8,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './story-card-container.scss',
 })
 export class StoryCardContainer {
+  readonly #el = inject(ElementRef);
 
+  scroll(px: number): void {
+    this.#el.nativeElement.scrollBy({ left: px, behavior: 'smooth' });
+  }
 }
