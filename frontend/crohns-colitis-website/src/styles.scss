@@ -53,15 +53,31 @@ all: unset;
 
 .secondary{
   background: var(--brand-color-white);
+  transition: 0.4s ease;
+}
+
+.secondary:hover{
+  backdrop-filter: blur(8px);
+  box-shadow:
+  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
+  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
+  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
+}
+
+.secondary:active{
+  box-shadow:
+  0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
+  0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
+  0 0 5px rgba(255, 255, 255, 0.1); /* Large, faint outer halo */
 }
 
 .primary{
   background: var(--brand-color-red);
+  transition: 0.4s ease;
 }
 
 .primary:hover{
   backdrop-filter: blur(8px);
-  background: rgba(10, 10, 55);
   box-shadow:
   0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
   0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
@@ -69,7 +85,6 @@ all: unset;
 }
 
 .primary:active{
-  background:rgb(38, 38, 161);
   box-shadow:
   0 0 0px rgba(255, 255, 255, 0.8), /* Small, bright core */
   0 0 0px rgba(255, 255, 255, 0.4), /* Medium mid-glow */
