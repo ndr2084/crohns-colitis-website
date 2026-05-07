@@ -1,0 +1,42 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-card{
+  background: var(--brand-color-blue);
+  width: 400px;
+  height: 200px;
+  transform: rotate(-20deg);
+
+  position: relative;
+}
+
+.red-card{
+  color: white;
+  text-align: center;
+  background: var(--brand-color-red);
+  position: relative;
+  transform: rotate(20deg);
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+h1 {
+  font-size: clamp(18px, 2vw + 0.5rem, 32px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(11px, 1vw + 0.25rem, 16px);
+  font-weight: 400;
+  line-height: 1.2;
+  padding-left: var(--subtitle-indent);
+}

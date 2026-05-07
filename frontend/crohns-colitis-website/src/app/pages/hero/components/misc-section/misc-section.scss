@@ -1,0 +1,27 @@
+.wrapper{
+  display: grid;
+  grid-template-areas:
+  "app-community-information app-quick-facts"
+  "app-news-letter app-quick-facts";
+}
+
+:host > * > *{
+  border: 1px solid black;
+
+}
+
+app-news-letter{
+  grid-area: app-news-letter;
+}
+
+app-quick-facts{
+  grid-area: app-quick-facts;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+app-community-information{
+  grid-area: app-community-information;
+}

@@ -6,10 +6,11 @@ import { CommunityInformation } from "./components/misc-section/community-inform
 import { RelatedPages } from "./components/related-pages/related-pages";
 import { QuickNavSection } from "./components/quick-nav-section/quick-nav-section";
 import { NavBarMobile } from "../../components/nav-bar-mobile/nav-bar-mobile";
+import { MiscSection } from "./components/misc-section/misc-section";
 
 @Component({
   selector: 'app-hero',
-  imports: [NewsAndEvents, HeroSection, CommunityStories, CommunityInformation, RelatedPages, QuickNavSection, NavBarMobile],
+  imports: [NewsAndEvents, HeroSection, CommunityStories, CommunityInformation, RelatedPages, QuickNavSection, NavBarMobile, MiscSection],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
