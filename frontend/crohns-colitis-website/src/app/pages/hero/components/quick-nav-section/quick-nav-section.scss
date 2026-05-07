@@ -1,10 +1,3 @@
-:host {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-}
-
 .title-group {
   display: flex;
   flex-direction: column;
@@ -25,8 +18,8 @@ h2 {
 
 app-quick-nav-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  gap: 16px;
   margin: 0 auto;
-
+  width: clamp(70%, 800px, 100%);
 }

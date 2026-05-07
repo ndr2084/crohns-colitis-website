@@ -25,10 +25,61 @@ app-event-card-container{
   overflow-y: scroll;
   gap: 8px;
 
+}
+
+app-news-and-events-desktop-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.force-row{
+  display: none;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-container{
+  display: flex;
+  gap: 8px;
+}
+
+.filter-button{
+  border: 1px solid black;
+  border-radius: var(--default-border-radius);
+  width: 50px;
+  height: 25px;
+  text-align: center;
+}
 
 
 
+@media (max-width: 1250px){
+  app-news-and-events-desktop-container{
+    grid-template-columns: auto auto;
+  }
+}
 
+@media (max-width: 1000px){
+  app-news-and-events-desktop-container{
+    display: none;
+  }
+
+  .conditional-row{
+    display: none;
+  }
+
+  .force-row{
+    display: flex;
+  }
+
+  .filter-button{
+    display: none;
+  }
 }
 
 

@@ -1,8 +1,21 @@
-<div class="title-group">
-  <h1>News and Events</h1>
-  <h2>Find out what's happening</h2>
-
+<div class="container">
+  <div class="title-subheading">
+    <h1>News And events</h1>
+    <h2>Find out what's happening</h2>
+  </div>
+  <div class="filter-container">
+    <button class="filter-button" (click)="toggleView()">{{ buttonText() }}</button>
+  </div>
 </div>
+@if(viewSignal() === true){
+<app-news-and-events-desktop-container></app-news-and-events-desktop-container>
+}
+@else{
+<div class="conditional-row">
+  <app-event-card-container></app-event-card-container>
+</div>
+}
 
-<app-event-card-container></app-event-card-container>
-
+<div class="force-row">
+  <app-event-card-container></app-event-card-container>
+</div>
