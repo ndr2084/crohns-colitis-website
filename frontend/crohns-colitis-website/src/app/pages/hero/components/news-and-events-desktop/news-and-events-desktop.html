@@ -1,22 +1,21 @@
 <div class="container">
-  <div class="card">
-    <div class="photo">
-      <div class="meta-info">
-        <p>Virtual</p>
-      </div>
-      <div class="meta-info">
-        <p>Educational</p>
-      </div>
-    </div>
-    <div class="information">
-      <p class="date-time">May 13 2025 •  8pm - 9pm </p>
-      <h1 class="card-title">Finding the Right Care for Your IBD Journey</h1>
-      <p class="date-time">Managing Crohn’s disease or ulcerative colitis can feel overwhelming, especially when symptoms flare or help seems hard to find. You don’t have to face these moments alone. </p>
-
-
-
-
-    </div>
+  <div class="title-subheading">
+    <h1>News And events</h1>
+    <h2>Find out what's happening</h2>
+  </div>
+  <div class="filter-container">
+    <button class="filter-button" (click)="toggleView()">{{ buttonText() }}</button>
   </div>
 </div>
+@if(viewSignal() === true){
+<app-news-and-events-desktop-container></app-news-and-events-desktop-container>
+}
+@else{
+<div class="conditional-row">
+  <app-event-card-container></app-event-card-container>
+</div>
+}
 
+<div class="force-row">
+  <app-event-card-container></app-event-card-container>
+</div>

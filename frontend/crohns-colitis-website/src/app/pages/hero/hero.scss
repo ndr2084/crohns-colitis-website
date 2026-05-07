@@ -36,6 +36,7 @@ app-quick-nav-section{
 
 
 app-news-and-events {
+
   @include container;
   padding: var(--section-padding);
   color: black;
@@ -46,7 +47,11 @@ app-news-and-events {
   gap: 8px;
   height: 100%;
   border-top: 1px solid black;
+  display: none;
+}
 
+app-news-and-events-desktop{
+  border-top: 1px solid black;
 }
 
 app-community-information {
@@ -65,6 +70,8 @@ app-community-stories {
   padding: var(--section-padding);
   color: black;
   border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
   width: 100%;
   height: fit-content;
   display: flex;
@@ -85,7 +92,6 @@ app-related-pages {
   flex: 1 1 0;
 }
 
-
 @media (max-width: 768px){
 
   app-hero-section{
@@ -100,5 +106,12 @@ app-related-pages {
 
   app-related-pages{
     height: fit-content;
+  }
+
+  app-news-and-events{
+    display: flex;
+}
+  app-news-and-events-desktop{
+    display: none;
   }
 }

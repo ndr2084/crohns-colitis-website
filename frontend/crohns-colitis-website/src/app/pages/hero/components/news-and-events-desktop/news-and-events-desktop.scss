@@ -1,51 +1,68 @@
-@use 'mixins' as *;
+app-news-and-events-desktop-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.force-row{
+  display: none;
+}
+
+
+h1 {
+  font-size: clamp(18px, 2vw + 0.5rem, 32px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(11px, 1vw + 0.25rem, 16px);
+  font-weight: 400;
+  line-height: 1.2;
+  padding-left: var(--subtitle-indent);
+}
 
 .container{
-  border: 1px solid green;
-}
-.card{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter-container{
+  display: flex;
+  gap: 8px;
+}
+
+.filter-button{
   border: 1px solid black;
-  min-height: 300px;
-  height: fit-content;
-  width: 450px;
-  margin: 1em;
   border-radius: var(--default-border-radius);
+  width: 50px;
+  height: 25px;
+  text-align: center;
 }
 
-.photo{
-  position: relative;
-  top: -10px;
-  left: 10px;
-  width: 425px;
-  height: 225px;
-  background-image: url('/gutsy-learning-series.png');
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--default-border-radius);
-  display: flex;
-  flex-flow: row wrap;
+
+
+@media (max-width: 1250px){
+  app-news-and-events-desktop-container{
+    grid-template-columns: auto auto;
+  }
 }
 
-.card-title{
-  font-size: 13px;
-}
+@media (max-width: 1000px){
+  app-news-and-events-desktop-container{
+    display: none;
+  }
 
-.meta-info{
-  @include container;
-  padding: 0 0.75em;
-  color: white;
-  border-radius: var(--default-border-radius);
-  margin: 0.5em;
-  width: fit-content;
-  height: fit-content;
-}
+  .conditional-row{
+    display: none;
+  }
 
-.information{
-  padding-left: 1em;
-}
+  .force-row{
+    display: flex;
+  }
 
-.date-time{
-  font-size: 11px;
+  .filter-button{
+    display: none;
+  }
 }

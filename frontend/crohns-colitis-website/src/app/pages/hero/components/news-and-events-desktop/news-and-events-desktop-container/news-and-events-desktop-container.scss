@@ -1,0 +1,51 @@
+@use 'mixins' as *;
+
+
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  min-height: 300px;
+  height: fit-content;
+  width: 450px;
+  margin: 1em;
+  border-radius: var(--default-border-radius);
+}
+
+.photo{
+  position: relative;
+  top: -10px;
+  left: 10px;
+  width: 425px;
+  height: 225px;
+  background-image: url('/gutsy-learning-series.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--default-border-radius);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-title{
+  font-size: 13px;
+}
+
+.meta-info{
+  @include container;
+  padding: 0 0.75em;
+  color: white;
+  border-radius: var(--default-border-radius);
+  margin: 0.5em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.information{
+  padding-left: 1em;
+}
+
+.date-time{
+  font-size: 11px;
+}
