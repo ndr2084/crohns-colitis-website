@@ -19,6 +19,8 @@ a{
   width: 450px;
   margin: 1em;
   border-radius: var(--default-border-radius);
+  border: 1px solid white;
+
 }
 
 .inner-card{
@@ -26,13 +28,13 @@ a{
   top: -10px;
   left: 10px;
   width: 425px;
-  height: 115px;
-  background: var(--brand-color-blue);
+  height: fit-content;
+  background: var(--brand-color-red);
   border-radius: var(--default-border-radius);
   display: flex;
   flex-flow: column;
-  padding: 1em;
-  gap: 8px;
+  padding: 2em;
+  gap: 1.5em;
   color: white;
 }
 
@@ -40,6 +42,17 @@ a{
   font-size: 13px;
 }
 
+label{
+  font-size: 20px;
+  font-weight: 450;
+}
+
 #province-select{
   height: fit-content;
+}
+
+select{
+  height: 50px;
+  padding: 10px;
+  border-radius: var(--default-border-radius);
 }

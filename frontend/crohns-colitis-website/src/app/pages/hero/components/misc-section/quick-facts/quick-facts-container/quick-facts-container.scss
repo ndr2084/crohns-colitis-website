@@ -1,27 +1,24 @@
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .blue-card{
   background: var(--brand-color-blue);
-  width: 400px;
-  height: 200px;
+  border-radius: var(--default-border-radius);
+  width: 500px;
+  height: 300px;
   transform: rotate(-20deg);
 
   position: relative;
 }
 
 .red-card{
+  border-radius: var(--default-border-radius);
   color: white;
   text-align: center;
   background: var(--brand-color-red);
   position: relative;
   transform: rotate(20deg);
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;

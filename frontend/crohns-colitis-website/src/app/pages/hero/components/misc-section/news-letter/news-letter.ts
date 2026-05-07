@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './news-letter.scss',
 })
 export class NewsLetter {
-
 }

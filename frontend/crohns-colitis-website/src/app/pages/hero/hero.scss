@@ -5,7 +5,6 @@
   flex-direction: column;
   height: 100%;
   overflow: scroll;
-  --section-padding: 8px 8px;
   --subtitle-indent: 1em;
 }
 
@@ -15,6 +14,14 @@
   margin-bottom: 8px;
 }
 
+
+app-misc-section{
+  display: block;
+  height: 75%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: var(--section-padding);
+}
 
 app-hero-section {
   display: flex;
@@ -55,7 +62,7 @@ app-community-information {
 }
 
 app-community-stories {
-  @include container;
+  display: flex;
   padding: var(--section-padding);
   color: black;
   border-top: 1px solid black;
@@ -63,7 +70,7 @@ app-community-stories {
 
   width: 100%;
   height: fit-content;
-  display: flex;
+
   flex-direction: column;
   gap: 8px;
 

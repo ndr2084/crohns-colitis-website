@@ -1,24 +1,39 @@
 .card{
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  min-height: 300px;
+  border: 1px solid white;
   height: fit-content;
   width: 450px;
   margin: 1em;
   border-radius: var(--default-border-radius);
 }
 
-.photo{
+.sub-card{
   position: relative;
   top: -10px;
   left: 10px;
   width: 425px;
-  height: 225px;
-  background-image: url('/gutsy-learning-series.png');
-  background-size: cover;
-  background-position: center;
+  height: fit-content;
+  background: var(--brand-color-blue);
+  color: white;
+  padding: 1em;
+
   border-radius: var(--default-border-radius);
   display: flex;
-  flex-flow: row wrap;
+  justify-content: center;
 }
+
+h1 {
+  font-size: clamp(18px, 2vw + 0.5rem, 32px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(11px, 1vw + 0.25rem, 16px);
+  font-weight: 400;
+  line-height: 1.2;
+  padding-left: var(--subtitle-indent);
+}
+
+

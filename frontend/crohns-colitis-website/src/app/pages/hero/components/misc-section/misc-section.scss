@@ -1,17 +1,23 @@
+@use 'mixins' as *;
 .wrapper{
+  @include container;
+  background: rgb(2, 10, 40);
   display: grid;
   grid-template-areas:
   "app-community-information app-quick-facts"
   "app-news-letter app-quick-facts";
-}
+  grid-template-rows: 2fr 1fr;
+  height: 100%;
+  color: white;
 
-:host > * > *{
-  border: 1px solid black;
-
+  padding: var(--section-padding);
 }
 
 app-news-letter{
   grid-area: app-news-letter;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 app-quick-facts{
