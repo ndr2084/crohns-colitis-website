@@ -13,7 +13,7 @@
 
 .photo-wrapper {
   position: relative;
-  top: -5px;
+  top: 5px;
   left: 5px;
   width: calc(100% - 10px);
   aspect-ratio: 1/1;
@@ -21,7 +21,7 @@
 }
 
 .card:hover .photo-wrapper {
-  top: -2px;
+  top: -0px;
   left: 5px;
 }
 

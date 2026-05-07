@@ -30,14 +30,14 @@ app-hero-section {
 }
 
 app-quick-nav-section{
-
-
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: var(--default-padding);
+}
 
-
+app-news-and-events{
+  display: block;
+  padding: var(--section-padding);
 }
 
 
