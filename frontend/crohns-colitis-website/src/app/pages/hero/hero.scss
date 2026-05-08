@@ -9,12 +9,6 @@
 }
 
 
-:host > *{
-
-  margin-bottom: 8px;
-}
-
-
 app-misc-section{
   display: block;
   height: 75%;
@@ -37,6 +31,7 @@ app-hero-section {
 }
 
 app-quick-nav-section{
+  padding: var(--section-padding);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,6 +81,12 @@ app-related-pages {
   gap: 8px;
   flex-direction: column;
   flex: 1 1 0;
+  height: fit-content;
+}
+
+app-footer{
+  display: block;
+  background: var(--brand-color-red);
 }
 
 @media (max-width: 768px){

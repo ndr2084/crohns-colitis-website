@@ -1,5 +1,12 @@
 @use 'mixins' as *;
+
+.wrapper{
+  @include container;
+  padding: var(--section-padding);
+}
+
 app-page-card{
+    padding: 1em;
     gap: 16px;
     display: flex;
     flex-flow: row wrap;

@@ -1,0 +1,39 @@
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--section-padding);
+}
+
+.logo-and-socials{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  gap: 64px;
+}
+
+.resources{
+  gap: 16px;
+color: white;
+display: flex;
+flex-direction: column;
+}
+
+.information{
+  gap: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+app-social-media-bar{
+  display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(64px + 16px);
+    padding: 16px 8px;
+    background: transparent;
+
+}

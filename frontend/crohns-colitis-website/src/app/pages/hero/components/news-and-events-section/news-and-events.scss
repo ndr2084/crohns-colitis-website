@@ -1,6 +1,11 @@
 @use 'mixins' as *;
 @use 'animations' as *;
 
+.wrapper{
+  @include container;
+  padding: var(--section-padding);
+}
+
 .title-group {
   display: flex;
   flex-direction: column;
@@ -29,7 +34,7 @@ app-event-card-container{
 
 app-news-and-events-desktop-container{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   justify-content: center;
 }

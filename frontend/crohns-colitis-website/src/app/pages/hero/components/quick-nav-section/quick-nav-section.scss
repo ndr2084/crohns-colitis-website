@@ -1,6 +1,13 @@
+@use 'mixins' as *;
 .title-group {
   display: flex;
   flex-direction: column;
+}
+
+.wrapper{
+  @include container;
+  padding: var(--section-padding);
+
 }
 
 h1 {
