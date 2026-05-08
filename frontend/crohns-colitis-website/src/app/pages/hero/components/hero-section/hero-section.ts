@@ -26,29 +26,29 @@ export class HeroSection implements OnInit, OnDestroy {
       secondaryBtn: 'Learn More',
     },
     {
-      image: "url('https://picsum.photos/seed/health2/1600/900')",
+      image: "url('mind-meeting.png')",
       title: ['Together We Can', 'Find a Cure'],
       text: ['Join thousands of Canadians fighting Crohn\'s disease and ulcerative colitis'],
       primaryBtn: 'Get Involved',
       secondaryBtn: 'Learn More',
     },
     {
-      image: "url('https://picsum.photos/seed/health3/1600/900')",
+      image: "url('picke-ball-final.png')",
       title: ['Support Your', 'Community'],
-      text: ['Connect with others living with IBD across Canada and find the help you need'],
+      text: ['Connect with others living with IBD across Canada'],
       primaryBtn: 'Find Support',
       secondaryBtn: 'Learn More',
     },
   ];
 
-  currentIndex = signal(0);
-  currentSlide = computed(() => this.slides[this.currentIndex()]);
+  currentIndexSignal = signal(0);
+  currentSlideSignal = computed(() => this.slides[this.currentIndexSignal()]);
 
   private timer: ReturnType<typeof setInterval> | null = null;
 
   ngOnInit() {
     this.timer = setInterval(() => {
-      this.currentIndex.update(i => (i + 1) % this.slides.length);
+      this.currentIndexSignal.update(i => (i + 1) % this.slides.length);
     }, 5000);
   }
 
@@ -57,6 +57,6 @@ export class HeroSection implements OnInit, OnDestroy {
   }
 
   goToSlide(index: number) {
-    this.currentIndex.set(index);
+    this.currentIndexSignal.set(index);
   }
 }

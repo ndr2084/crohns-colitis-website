@@ -1,23 +1,23 @@
-<div class="wrapper" [style.background-image]="currentSlide().image">
+<div class="wrapper" [style.background-image]="currentSlideSignal().image">
   <app-social-media-bar class="desktop-media-bar"></app-social-media-bar>
   <app-social-media-bar class="mobile-media-bar"></app-social-media-bar>
   <div class="hero-title">
-    @for (line of currentSlide().title; track line) {
+    @for (line of currentSlideSignal().title; track line) {
       <h1>{{ line }}</h1>
     }
   </div>
   <div class="hero-text">
-    @for (line of currentSlide().text; track line) {
+    @for (line of currentSlideSignal().text; track line) {
       <p>{{ line }}</p>
     }
   </div>
   <div class="button-container">
-    <button class="hero-button primary">{{ currentSlide().primaryBtn }}</button>
-    <button class="hero-button secondary">{{ currentSlide().secondaryBtn }}</button>
+    <button class="hero-button primary">{{ currentSlideSignal().primaryBtn }}</button>
+    <button class="hero-button secondary">{{ currentSlideSignal().secondaryBtn }}</button>
   </div>
   <div class="dots">
     @for (slide of slides; track $index) {
-      <button class="dot" [class.active]="currentIndex() === $index" (click)="goToSlide($index)"></button>
+      <button class="dot" [class.active]="currentIndexSignal() === $index" (click)="goToSlide($index)"></button>
     }
   </div>
 </div>
