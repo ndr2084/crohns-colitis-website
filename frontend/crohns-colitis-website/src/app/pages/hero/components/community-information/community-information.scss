@@ -21,7 +21,7 @@ h2 {
 }
 
 app-province-territory-card-container{
-    height: 100%;
+    height: fit-content;
     gap: 16px;
     display: flex;
     flex-flow: row wrap;

@@ -16,7 +16,7 @@ a{
   flex-direction: column;
   border: 1px solid black;
   height: fit-content;
-  width: 450px;
+  width: clamp(280px, 30vw, 450px);
   margin: 1em;
   border-radius: var(--default-border-radius);
   border: 1px solid white;
@@ -27,7 +27,7 @@ a{
   position: relative;
   top: -10px;
   left: 10px;
-  width: 425px;
+  width: calc(100% - 10px);
   height: fit-content;
   background: var(--brand-color-red);
   border-radius: var(--default-border-radius);
@@ -52,6 +52,7 @@ label{
 }
 
 select{
+  width: 100%;
   height: 50px;
   padding: 10px;
   border-radius: var(--default-border-radius);

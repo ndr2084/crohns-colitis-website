@@ -6,7 +6,7 @@
   --hero-secondary: #cecece92;
 }
 
-.social-bar {
+.desktop-media-bar {
   position: absolute;
   left: 90%;
   top: 50%;
@@ -17,7 +17,10 @@
   gap: calc(64px + 16px);
   padding: 16px 8px;
   background: transparent;
+}
 
+.mobile-media-bar{
+  display: none;
 }
 
 .secondary{
@@ -43,15 +46,18 @@ h1 {
 .main-hero-component{
   width: 100%;
   max-width: 100%;
-  gap: clamp(64px, 8vw, 256px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .hero-title{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-button {
@@ -76,9 +82,15 @@ h1 {
 }
 
 @media (max-width: 1250px) {
-  .social-bar {
-    position: static;
-    transform: none;
+  .mobile-media-bar{
+    display: flex;
+    gap: 32px;
+  }
+
+  .main-hero-component{
+    .desktop-media-bar{
+      display: none;
+    }
   }
 }
 

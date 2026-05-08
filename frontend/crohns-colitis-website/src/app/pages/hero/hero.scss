@@ -11,7 +11,8 @@
 
 app-misc-section{
   display: block;
-  height: 75%;
+  min-height: 75%;
+  height: fit-content;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: var(--section-padding);
@@ -77,7 +78,7 @@ app-related-pages {
   padding: var(--section-padding);
   width: 100%;
   color: black;
-  display: flex;
+  display: block;
   gap: 8px;
   flex-direction: column;
   flex: 1 1 0;
@@ -90,6 +91,10 @@ app-footer{
 }
 
 @media (max-width: 768px){
+
+  :host > *{
+    padding: unset;
+  }
 
   app-hero-section{
     background-position: 65% 20%;

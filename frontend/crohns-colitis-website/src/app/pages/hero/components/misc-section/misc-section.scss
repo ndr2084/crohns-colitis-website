@@ -7,7 +7,6 @@
   "app-community-information app-quick-facts"
   "app-news-letter app-quick-facts";
   grid-template-rows: 2fr 1fr;
-  height: 100%;
   color: white;
 
   padding: var(--section-padding);
@@ -29,5 +28,39 @@ app-quick-facts{
 }
 
 app-community-information{
+  display: flex;
+  flex-direction: column;
   grid-area: app-community-information;
+}
+
+@media (max-width: 1250px){
+  .wrapper{
+    grid-template-areas:
+    "app-community-information"
+    "app-quick-facts"
+    "app-news-letter";
+    gap: 128px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  app-community-information{
+    align-items: center;
+
+  }
+
+  app-news-letter{
+    align-items: center;
+  }
+
+  app-quick-facts{
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px){
+  .wrapper{
+    padding: 0;
+  }
 }

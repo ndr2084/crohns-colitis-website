@@ -3,8 +3,8 @@
 .blue-card{
   background: var(--brand-color-blue);
   border-radius: var(--default-border-radius);
-  width: 500px;
-  height: 300px;
+  width: clamp(200px, 32vw, 500px);
+  height: clamp(120px, 19vw, 300px);
   transform: rotate(-20deg);
 
   position: relative;
@@ -17,8 +17,8 @@
   background: var(--brand-color-red);
   position: relative;
   transform: rotate(20deg);
-  width: 500px;
-  height: 300px;
+  width: clamp(200px, 32vw, 500px);
+  height: clamp(120px, 19vw, 300px);
   display: flex;
   justify-content: center;
   align-items: center;
