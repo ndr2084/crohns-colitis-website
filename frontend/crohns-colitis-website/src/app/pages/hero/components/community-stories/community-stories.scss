@@ -70,6 +70,13 @@ h2 {
   padding-left: var(--subtitle-indent);
 }
 
+@media (max-width: 768px){
+  .wrapper{
+  padding: var(--mobile-padding);
+  }
+
+}
+
 
 
 

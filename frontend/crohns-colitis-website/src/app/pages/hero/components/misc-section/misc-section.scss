@@ -8,7 +8,6 @@
   "app-news-letter app-quick-facts";
   grid-template-rows: 2fr 1fr;
   color: white;
-
   padding: var(--section-padding);
 }
 
@@ -61,6 +60,8 @@ app-community-information{
 
 @media (max-width: 768px){
   .wrapper{
-    padding: 0;
+    padding: 0 0.2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }

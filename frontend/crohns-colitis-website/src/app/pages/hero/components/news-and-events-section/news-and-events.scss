@@ -2,6 +2,7 @@
 @use 'animations' as *;
 
 .wrapper{
+  width: 100%;
   @include container;
   padding: var(--section-padding);
 }
@@ -34,10 +35,9 @@ app-event-card-container{
 
 app-news-and-events-desktop-container{
   display: grid;
-  gap: 64px;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
   width: 100%;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 375px);
 }
 
 .force-row{
@@ -64,12 +64,6 @@ app-news-and-events-desktop-container{
 
 
 
-@media (max-width: 1250px){
-  app-news-and-events-desktop-container{
-    grid-template-columns: auto auto;
-  }
-}
-
 @media (max-width: 1000px){
   app-news-and-events-desktop-container{
     display: none;
@@ -88,6 +82,12 @@ app-news-and-events-desktop-container{
   }
 }
 
+@media (max-width: 768px){
+
+.wrapper{
+  padding: var(--mobile-padding);
+}
+}
 
 
 

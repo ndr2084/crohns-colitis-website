@@ -36,11 +36,14 @@ app-quick-nav-container{
   app-quick-nav-container{
     display: grid;
     grid-template-columns: auto auto auto;
+  }
 }
 
 @media (max-width: 768px){
   app-quick-nav-container{
   grid-template-columns: auto auto;
-}
-}
+  }
+  .wrapper{
+    padding: var(--mobile-padding);
+  }
 }

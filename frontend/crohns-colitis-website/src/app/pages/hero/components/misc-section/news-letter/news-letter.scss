@@ -12,10 +12,7 @@
   .card { width: clamp(250px, calc(100vw - 2em), 450px); }
 }
 
-@media (max-width: 500px) {
-  .card { margin: 0.25em; }
-  .sub-card { padding: 0.5em; }
-}
+
 
 .sub-card{
   position: relative;
