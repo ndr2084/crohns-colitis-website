@@ -52,13 +52,18 @@ h1 {
 }
 
 .wrapper{
+  position: relative;
   padding: var(--section-padding);
   width: 100%;
+  min-height: 100%;
   gap: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title{
@@ -89,6 +94,30 @@ h1 {
   gap: clamp(8px, 2vw, 24px);
 }
 
+.dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dot {
+  margin: 0.5em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &.active {
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
 @media (max-width: 1250px) {
   .mobile-media-bar{
     display: flex;
@@ -97,7 +126,7 @@ h1 {
 
   .wrapper{
     padding: var(--section-padding);
-    width: fit-content;
+
     gap: 32px;
     display: flex;
     flex-direction: column;
@@ -120,18 +149,12 @@ h1 {
 
 @media (max-width: 1000px){
   .hero-text{
-    width: fit-content;
-    display: block;
-
-    justify-content: center;
-    align-items: center;
-    font-weight: 350;
-    font-size: clamp(16px, 2vw + 0.75rem, 20px);
-
-    text-shadow: 0 0 12px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
   }
 
   .wrapper{
+    width: 100%;
     justify-content: center;
     gap: 64px;
 
