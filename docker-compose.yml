@@ -1,5 +1,5 @@
 services:
   app:
-    build: ./frontend/crohns-colitis-website
+    build: .
     ports:
       - "4200:80"
