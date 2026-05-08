@@ -20,6 +20,7 @@ app-misc-section{
 
 app-hero-section {
   display: flex;
+  justify-content: center;
   padding: var(--default-padding);
   font-size: 12px;
   color: white;

@@ -22,7 +22,7 @@ app-header{
   @include container;
 
   color: black;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.064);
+
   border-radius: 0;
   flex: 0 0 3%;
   width: 100%;
@@ -65,7 +65,6 @@ main {
 
   app-nav-bar-mobile{
     display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.666);
   }
 
 
